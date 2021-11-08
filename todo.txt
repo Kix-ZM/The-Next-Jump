@@ -1,0 +1,25 @@
+/////////////////MAJOR/////////////////
+
+Add more crystal stuff around the game. Redo Crystal quest and rebalance crystal weapons.
+
+Add new hulls for AE ship variants.
+
+Replace Fed Cruiser with Rebel Cruiser.
+
+Make nebula sectors more interesting.
+
+Add ghosts.
+
+/////////////////MINOR/////////////////
+
+Make Anti-Bio Beam exclusive to the slug unlock.
+
+Modify ship starting loadouts.
+
+Improved miniships
+
+Modify ship unlocks.
+
+/////////////////COMPLETE/////////////////
+
+Implement modified weapon sprites

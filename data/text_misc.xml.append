@@ -1,0 +1,146 @@
+<FTL>
+<text name="no_time_sector">Upon examining your map, you realize you just won't have time and need to get to the next sector! You leave the quest for another day.</text>
+
+<text name="no_type_c">Hangar Empty</text>
+<text name="window_title">FTL: FASTER THAN LIGHT</text>
+<text name="version">\1 (Mod 1.0, Hyperspace 0.8)</text>
+
+<text name="fire_chance">Fire Chance: \1%</text>  <!-- \1: chance (chance_* string) -->
+<text name="breach_chance">Breach Chance: \1% (Adjusted: \2%)</text>  <!-- \1: chance (chance_* string) -->
+<text name="stun_chance">Stun Chance: \1%</text>  <!-- \1: chance (chance_* string) -->
+
+<text name="free_missile_chance">Chance To Not Use Missile: \1%</text>  <!-- \1: chance -->
+
+<text name="crew_statboost_chance">Affliction Chance: \1%</text>  <!-- \1: chance, \2 is low/medium/high -->
+<text name="crew_spawn_chance">Chance to Spawn Crew: \1%</text>  <!-- \1: chance, \2 is low/medium/high -->
+
+<text name="augment_no_effect">These augmentations will have no effect with this augment installed:</text>
+
+<text name="seed_prompt">Seed</text>
+<text name="menu_status_seed">Seed</text>
+<text name="unlocks_disabled">Unlocks Disabled</text>
+
+<text name="store_unavailable">UNAVAILABLE</text>
+
+<text name="power_ready">Ready: Click to use special power</text>
+<text name="power_not_ready">Not Ready: Power still charging (see charge left of portrait)</text>
+<text name="power_not_ready_player_ship">Not Ready: Not on player ship</text>
+<text name="power_not_ready_enemy_ship">Not Ready: Not on enemy ship</text>
+<text name="power_not_ready_enemy_in_room">Not Ready: No enemies in room</text>
+<text name="power_not_ready_friendly_in_room">Not Ready: No friendly crew in room</text>
+<text name="power_not_ready_whitelist">Not Ready: No whitelisted crew in room</text>
+<text name="power_not_ready_enemy_whitelist">Not Ready: No whitelisted enemy in room</text>
+<text name="power_not_ready_friendly_whitelist">Not Ready: No whitelisted friendly crew in room</text>
+<text name="power_not_ready_enemy_blacklist">Not Ready: Blacklisted enemy in room</text>
+<text name="power_not_ready_friendly_blacklist">Not Ready: Blacklisted friendly crew in room</text>
+<text name="power_not_ready_system_in_room">Not Ready: No system in room</text>
+<text name="power_not_ready_activated">Activated: Power currently in use (see duration left of portrait)</text>
+<text name="power_not_ready_ai_disabled">Not Ready: Power disabled for AI (shouldn't see this)</text>
+<text name="power_not_ready_has_clonebay">Not Ready: No clone bay available</text>
+<text name="power_not_ready_out_of_combat">Not Ready: In combat</text>
+<text name="power_not_ready_in_combat">Not Ready: No enemy ship</text>
+<text name="power_not_ready_manning">Not Ready: Not manning system</text>
+<text name="power_not_ready_system">Not Ready: Missing \1 system</text>
+<text name="power_not_ready_system_functional">Not Ready: \1 system is not functional</text>
+<text name="power_not_ready_min_health">Not Ready: Health is below \1</text> <!-- \1 is min health req -->
+<text name="power_not_ready_max_health">Not Ready: Health is above \1</text> <!-- \1 is max health req -->
+<text name="power_not_ready_system_damaged">Not Ready: No damaged system in room</text>
+<text name="power_not_ready_mind">Not Ready: Mind controlled</text>
+<text name="power_not_ready_mind_enemy">Not Ready: Enemy has control</text>
+<text name="power_not_ready_teleporting">Not Ready: Can't transform mid-teleport</text>
+<text name="power_not_ready_charges">Not Ready: Out of charges</text>
+
+<text name="advanced_health_tooltip">Health</text>
+<text name="weapon_cooldown_negative">Disabled</text>
+<text name="crew_stun_time">Stunned: \1 seconds</text>
+<text name="crew_death_time">Lifetime: \1 seconds</text>
+<text name="crew_death_time_expired">Lifetime: Expired</text>
+
+<!-- Redesigned Tooltips -->
+
+<text name="crew_stun_time">Stunned: \1 seconds</text>
+<text name="description_stats">Stats:</text>
+<text name="requires_no_power">Requires no power</text>
+<text name="provides_bonus_power">Provides Bonus Power</text>
+<text name="cannot_fire">Can't be shot</text>
+<text name="ammo_consumption">Missile Consumption: \1</text>
+<text name="redesigned_boost_power_damage_positive">Chain Effect: Increase damage by \1</text>
+<text name="redesigned_boost_power_damage_negative">Chain Effect: Decrease damage by \1</text>
+<text name="redesigned_boost_power_speed_positive">Chain Effect: Decrease cooldown by \1</text>
+<text name="redesigned_boost_power_speed_negative">Chain Effect: Increase cooldown by \1</text>
+<text name="redesigned_damage_cap">Chain Damage Cap: \1 damage (\2 chains)</text>
+<text name="redesigned_speed_cap">Chain Cooldown Cap: \1 (\2 chains)</text>
+<text name="shot_radius">Shot Radius: \1</text>
+<text name="shot_radius_angular">Shot Radius: \1 degrees</text>
+<text name="beam_length">Beam Length: \1</text>
+<text name="swipe_speed">Beam Speed: \1</text>
+<text name="redesigned_double_damage">2x hull damage on systemless rooms.</text>
+<text name="redesigned_damage_room">Normal Damage Per Room: \1 (x15 for crew)</text>
+<text name="redesigned_damage_shot">Normal Damage Per Shot: \1 (x15 for crew)</text>
+<text name="hull_damage">Hull Damage: \1</text>
+<text name="hull_damage_negative">Hull Repair: \1</text>
+<text name="system_damage_negative">System Repair: \1</text>
+<text name="personnel_damage_negative">Crew Healing: \1</text>
+<text name="stun_length">seconds long</text>
+<text name="weapon_lockdown">Locks down rooms on hit</text>
+<text name="scrap_value">Buy/Sell Price: \1 scrap/\2 scrap</text>
+<text name="damage_word">Damage</text>
+<text name="bomb_shots">Shots per charge: \1 (1 on own ship)</text>
+<text name="crew_scrap_value">Hire Price: \1~</text>
+<text name="drone_speed">Drone Speed: \1</text>
+<text name="defense_drone_reload_speed">Reload Speed: \1ms</text>
+<text name="defense_drone_projectile_speed">Projectile Speed: \1</text>
+<text name="defense_drone_orbit_speed">Orbit Speed: \1</text>
+<text name="defense_drone_projectile_target_all">Projectile Target: All</text>
+<text name="defense_drone_projectile_target_solid">Projectile Target: Solid</text>
+<text name="defense_drone_drone_target_all">Target: All Drones</text>
+<text name="defense_drone_drone_target_solid">Target: Solid Drones</text>
+
+<text name="teleporter_instant">No cooldown</text>
+<text name="clonebay_instant_fullheal">Instant clone + Full heal on jump</text>
+
+<!-- Hotkeys -->
+
+<text name="hotkey_drone4">Drone Slot 4</text>
+<text name="hotkey_speed">Toggle Speedhack</text>
+<text name="hotkey_console">Open Console</text>
+<text name="hotkey_info">Toggle Extra Info</text>
+<text name="hotkey_temporal">Power Temporal Manipulator</text>
+<text name="hotkey_un_temporal">De-Power Temporal Manipulator</text>
+<text name="hotkey_temporal_speed">Temporal Speed Up</text>
+<text name="hotkey_temporal_slow">Temporal Slow Down</text>
+
+<!-- More Info Button -->
+
+<text name="tooltip_more_info">Toggle advanced information, which provides extra info for:
+-Weapon/Drone/Augment Tooltips
+-Crew hover tooltips
+-Map connections
+-Room oxygen colors
+-Reactor numbers in hanger
+-Event equipment tooltips
+
+Key: \1</text> <!-- \1 is more info hotkey -->
+
+<!-- Discord Integration -->
+
+<text name="discord_main_menu">In main menu</text>
+<text name="discord_hangar">In the hangar</text>
+<text name="discord_dying">Dying</text>
+<text name="discord_exploring">Exploring</text>
+<text name="discord_battle">In Battle</text>
+<text name="discord_battle_boss">In Boss Battle (Phase \1)</text> <!-- \1 is boss phase -->
+<text name="discord_sector">\1 (\2/8)</text> <!-- \1 is sector name, \2 is sector number -->
+<text name="discord_ship">\1 Type \2</text> <!-- \1 is ship name, \2 is ship type (A, B or C) -->
+<text name="discord_playing_modded">Playing modded (\1)</text> <!-- \1 is discord_mod -->
+<text name="discord_playing_vanilla">Playing vanilla</text>
+<text name="discord_victory">Victory</text>
+<text name="discord_dead">Dead</text>
+<text name="discord_mod"></text>
+
+<!-- New save file -->
+
+<text name="transfer_save_dialog">It appears this is either your first time playing this mod, or have not yet set up a new save file! Would you like to transfer vanilla progress, or play with a fresh save? This will NOT influence your vanilla progress in any way.</text>
+<text name="transfer_save_yes">Transfer</text>
+<text name="transfer_save_no">Clear Save</text>
+</FTL>

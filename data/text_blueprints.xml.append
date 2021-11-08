@@ -1,0 +1,45 @@
+<FTL>
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\
+UNLOCK TEXTS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<text name="ship_PLAYER_SHIP_KESTREL_2_unlock">Get to Sector 8 with the Federation Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_KESTREL_3_unlock">Get to Sector 5 with the Federation Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_ENGI_unlock">??? or win with any Federation Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ENGI_2_unlock">Get to Sector 8 with the Engi Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ENGI_3_unlock">Get to Sector 5 with the Engi Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_MANTIS_unlock">??? or win with any Engi Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_MANTIS_2_unlock">Get to Sector 8 with the Mantis Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_MANTIS_3_unlock">Get to Sector 5 with the Mantis Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_ROCK_unlock">??? or win with any Mantis Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ROCK_2_unlock">Get to Sector 8 with the Rock Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ROCK_3_unlock">Get to Sector 5 with the Rock Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_ZOLTAN_unlock">??? or win with any Rock Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ZOLTAN_2_unlock">Get to Sector 8 with the Zoltan Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ZOLTAN_3_unlock">Get to Sector 5 with the Zoltan Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_SLUG_unlock">??? or win with any Zoltan Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_SLUG_2_unlock">Get to Sector 8 with the Rock Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_SLUG_3_unlock">Get to Sector 5 with the Rock Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_REBEL_unlock">??? or win with any Slug Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_REBEL_2_unlock">Get to Sector 8 with the Rebel Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_REBEL_3_unlock">Get to Sector 5 with the Rebel Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_LANIUS_unlock">??? or win with any Rebel Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_LANIUS_2_unlock">Get to Sector 8 with the Lanius Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_LANIUS_3_unlock">Get to Sector 5 with the Lanius Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_STEALTH_unlock">???</text>
+<text name="ship_PLAYER_SHIP_STEALTH_2_unlock">Get to Sector 8 with the Stealth Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_STEALTH_3_unlock">Get to Sector 8 with the Stealth Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_CRYSTAL_unlock">???</text>
+<text name="ship_PLAYER_SHIP_CRYSTAL_2_unlock">Get to Sector 8 with the Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_CRYSTAL_3_unlock">Get to Sector 5 with the Type B to unlock this ship.</text>
+</FTL>

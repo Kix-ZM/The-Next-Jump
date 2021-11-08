@@ -1,0 +1,76 @@
+<FTL>
+<!--
+**********************************************************************************************************************
+                                                 PROJECTILES 
+**********************************************************************************************************************
+-->
+<animSheet name="pds" w="215" h="125" fw="215" fh="125">weapons/pds.png</animSheet>
+<anim name="pds">
+	<sheet>pds</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ion_barrage_stun" w="24" h="24" fw="24" fh="24">weapons/ion_barrage_stun.png</animSheet>
+<anim name="ion_barrage_stun">
+	<sheet>ion_barrage_stun</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
+<!--
+**********************************************************************************************************************
+                                                 IONS 
+**********************************************************************************************************************
+-->
+<animSheet name="ion_stun" w="232" h="47" fw="29" fh="47">weapons/ion_stun.png</animSheet>
+<weaponAnim name="ion_stun">
+	<sheet>ion_stun</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="16" y="6"/>
+	<mountPoint x="4" y="32"/>
+	<chargeImage>weapons/ion_stun_glow.png</chargeImage>
+</weaponAnim>
+
+<!--
+**********************************************************************************************************************
+                                                 BOMBS 
+**********************************************************************************************************************
+-->
+<animSheet name="bomblauncher_stun" w="595" h="46" fw="35" fh="46">weapons/bomblauncher_stun.png</animSheet>
+<weaponAnim name="bomblauncher_stun">
+	<sheet>bomblauncher_stun</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>13</fireFrame>
+	<firePoint x="20" y="25" />
+	<mountPoint x="2" y="28" />
+	<chargeImage>weapons/bomblauncher_stun_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bomb_stun" w="525" h="35" fw="35" fh="35">weapons/bomb_stun.png</animSheet>
+<anim name="bomb_stun">
+	<sheet>bomb_stun</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="bomblauncher_repair" w="435" h="48" fw="29" fh="48">weapons/bomblauncher_repair.png</animSheet>
+<weaponAnim name="bomblauncher_repair">
+	<sheet>bomblauncher_repair</sheet>
+	<desc length="15" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint x="17" y="23" />
+	<mountPoint x="2" y="30" />
+	<chargeImage>weapons/bomblauncher_repair_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bomb_repair" w="525" h="35" fw="35" fh="35">weapons/bomb_repair.png</animSheet>
+<anim name="bomb_repair">
+	<sheet>bomb_repair</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+</FTL>

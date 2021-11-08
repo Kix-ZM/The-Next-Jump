@@ -1,0 +1,285 @@
+<FTL>
+
+<version>8</version>
+<seeds enabled="true"/>
+
+<!--these should all be toggled on by the button-->
+<advancedCrewTooltips enabled="false" ally="true" enemy="true" rounding="3"/>
+<eventTooltips enabled="false"/>
+<showNumericalWeaponCooldown enabled="false"/>
+<redesignedWeaponTooltips enabled="false"/>
+<showReactor enabled="false"/>
+
+<showScrapCollectorScrap enabled="true"/>
+<crystalShardFix enabled="true"/>
+<forceDlc enabled="false"/>
+<hackingDroneFix enabled="true"/>
+<defaults>
+	<beaconType_hideVanillaLabel>true</beaconType_hideVanillaLabel>
+	<checkCargo>false</checkCargo>
+</defaults>
+
+<titleScreen logo_x="862" logo_y="7" enabled="true">
+</titleScreen>
+
+<console enabled="true"/> 
+
+<saveFile>
+    <prefix>vnd</prefix>
+    <inheritMode>1</inheritMode>
+</saveFile>
+
+<hullNumbers enabled="true">
+	<playerText x="335" y="50" type="0" align="left" />
+	<enemyText x="988" y="59" type="0" align="center" />
+	<bossText x="864" y="16" type="0" align="center" />
+</hullNumbers>
+
+<augments>
+	<aug name="DEFAULTS">
+    	<function name="BOARDER_RECOVERY" value="1" useForReqs="true"/>
+		<function name="MIND_ORDER" value="1" useForReqs="true"/>
+    </aug>
+</augments>
+
+<ships hideFirstShipPage="true">
+	<shipIcons>
+        <normalPos x="1242" y="526"/>
+        <bossPos x="1235" y="553"/>
+        <shipIcon>
+            <name>icon_auto</name>
+            <tooltip>AUTOMATED:
+This enemy is automated, meaning it cannot be crew-killed. Systems act as though they are manned, and repairs will be made automatically. Breaches will prevent repairs in the affected room.</tooltip>
+        </shipIcon>
+    </shipIcons>
+	<shipOrder>
+		<!--PAGE0-->
+		<ship>PLAYER_SHIP_KESTREL</ship>
+		<ship>PLAYER_SHIP_ENGI</ship>
+		<ship>PLAYER_SHIP_HIVE</ship>
+		<ship>PLAYER_SHIP_ROCKMAN</ship>
+		<ship>PLAYER_SHIP_ZOLTAN</ship>
+		<ship>PLAYER_SHIP_SLUG</ship>
+		<ship>PLAYER_SHIP_REBEL</ship>
+		<ship>PLAYER_SHIP_LANIUS</ship>
+		<ship>PLAYER_SHIP_CLOAK</ship>
+		<ship>PLAYER_SHIP_CRYSTALLINE</ship>
+    </shipOrder>
+	
+	<ship name="PLAYER_SHIP_KESTREL" b="true" c="true">
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_KESTREL</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_KESTREL_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_ENGI" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_KESTREL</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_KESTREL_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_KESTREL_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_ENGI</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_ENGI_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_HIVE" b="true" c="true">
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ENGI</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ENGI_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ENGI_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_HIVE</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_HIVE_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_ROCKMAN" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_HIVE</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_HIVE_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_HIVE_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_ROCKMAN</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_ROCKMAN_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_ZOLTAN" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ROCKMAN</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ROCKMAN_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ROCKMAN_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_ZOLTAN</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_ZOLTAN_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_SLUG" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ZOLTAN</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ZOLTAN_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ZOLTAN_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_SLUG</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_SLUG_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_REBEL" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_SLUG</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_SLUG_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_SLUG_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_REBEL</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_REBEL_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_LANIUS" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_REBEL</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_REBEL_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_REBEL_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_LANIUS</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_LANIUS_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_CLOAK" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>4</type>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_CLOAK</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_CLOAK_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	<ship name="PLAYER_SHIP_CRYSTALLINE" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>4</type>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_CRYSTALLINE</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_CRYSTALLINE_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
+	
+	<customShip> <!--default-->
+		<hpCap>-1</hpCap>
+		<hiddenAug>DEFAULTS</hiddenAug>
+	</customShip>
+</ships>
+</FTL>

@@ -1,0 +1,215 @@
+<FTL>
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
+												  ENEMIES
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                                    REBELS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_REBEL">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_1_ENEMY</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>MISSILES_3_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BOMB_1</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    AUTOS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_AUTO">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_1_ENEMY</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>MISSILES_3_ENEMY</name>
+	<name>MISSILES_BURST_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BOMB_1</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_ION</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_HEAVY</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    FEDS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_FED">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_1_ENEMY</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>MISSILES_3_ENEMY</name>
+	<name>MISSILES_BURST_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BOMB_1</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    ZOLTAN 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_ZOLTAN">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_1_ENEMY</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>MISSILES_3_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>ION_1</name>
+	<name>ION_HEAVY</name>
+	<name>BOMB_1</name>
+	<name>BOMB_ION</name>
+	<name>BEAM_HULL</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    ENGI 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_CIRCLE">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_HEAVY</name>
+</blueprintList>
+<blueprintList name="DRONES_CIRCLE">
+	<name>COMBAT_BEAM</name>
+	<name>COMBAT_ION</name>
+	<name>DEFENSE_1</name>
+	<name>DEFENSE_2_ENEMY</name>
+	<name>REPAIR</name>
+	<name>BATTLE</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    ROCKS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_ROCK">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_1_ENEMY</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>MISSILES_3_ENEMY</name>
+	<name>MISSILES_BURST_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BOMB_1</name>
+	<name>ION_2</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    MANTIS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_MANTIS">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_1_ENEMY</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BOMB_1</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_ION</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    SLUGS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_JELLY">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_2</name>
+	<name>MISSILES_2_ENEMY</name>
+	<name>MISSILES_3_ENEMY</name>
+	<name>MISSILES_BURST_ENEMY</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_BREACH</name>
+	<name>ION_1</name>
+	<name>ION_3</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
+                                                    CRYSTALS 
+**********************************************************************************************************************
+-->
+<blueprintList name="WEAPONS_CRYSTAL">
+	<name>BOMB_LOCK</name>
+	<name>CRYSTAL_BURST_1</name>
+	<name>CRYSTAL_BURST_2</name>
+	<name>CRYSTAL_HEAVY_1</name>
+	<name>CRYSTAL_HEAVY_2</name>
+</blueprintList>
+
+</FTL>

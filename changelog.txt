@@ -1,0 +1,61 @@
+/////////////////UI AND IMPROVEMTNS/////////////////
+
+Created a new menu screen.
+
+Renamed various lists and blueprints to be more organized.
+
+Improved the shading and spritework on most weapons and drones.
+
+Player weapon variants now have a + at the end of their title.
+
+Hyperspace QoL features like hull number indicators and extended information are enabled.
+
+The lights/windows on Zoltan ships now glow.
+
+/////////////////GAMEPLAY/////////////////
+
+Boarding drones are now recovered at the end of combat if they have not been destroyed.
+
+Mind Controlled crew can now be controlled directly.
+
+/////////////////SHIPS/////////////////
+
+Renamed the Kestrel Cruisers to Federation Cruisers.
+
+Re-ordered various crew on ships so lanius dont spawn in piloting.
+
+Changed the Kestrel B and C's sprites. Modified Slug C.
+
+/////////////////EQUIPMENT/////////////////
+
+All missiles now have distinct and unique sprites.
+
+Removed breach and hull missiles, added "Ares" missiles. Player versions of the Artemis, Hermes, and Ares all have hullbust. Reduced player variant cooldowns by 1 second. All player missiles have a 20% accuracy bonus.
+
+Added a unique sprite for hull laser mk 2.
+
+Enemy letos are now 2 seconds slower.
+
+Heavy Pierce is no longer exclusive to Rock B and can be found in stores.
+
+Artemis can now be found in stores.
+
+Mini beam can now very rarely be found in stores.
+
+Renamed various weapons.
+
+Modified many projectile images.
+
+/////////////////ENEMIES/////////////////
+
+Enemies can now use swarm and burst missiles.
+
+/////////////////VANILLA FIXES/////////////////
+
+Fixed the hacking drone exploit.
+
+Money earned by scrap arm is now adjusted in the box itself.
+
+Your defense drones will no longer target your own crystal vengeance shards.
+
+Fixed Stealth Cruiser shading orientation.
