@@ -18,6 +18,8 @@ Modify ship starting loadouts.
 
 Improved miniships
 
+Give civilian sectors a new start beacon
+
 Modify ship unlocks.
 
 /////////////////COMPLETE/////////////////

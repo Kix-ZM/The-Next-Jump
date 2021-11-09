@@ -177,8 +177,8 @@
 </weaponBlueprint>
 <weaponBlueprint name="LASER_BURST_2_PLAYER">
 	<type>LASER</type>
-	<title>Burst Laser Mark I+</title>
-	<short>Burst Laser I+</short>
+	<title>Burst Laser Mark I†</title>
+	<short>Burst Laser I†</short>
 	<tip>tip_laser</tip>
 	<desc>This simple burst laser isn't flashy but it gets the job done.</desc>
 	<tooltip>Shoots 2 lasers that do 1 damage each.</tooltip>
@@ -650,8 +650,8 @@
 <weaponBlueprint name="MISSILES_2_PLAYER">
 	<type>MISSILES</type>
 	<tip>tip_missiles</tip>
-	<title>'Artemis' Missiles</title>
-	<short>'Artemis'</short>
+	<title>'Artemis' Missiles†</title>
+	<short>'Artemis'†</short>
 	<desc>Standard missile launcher on most Federation ships.</desc>
 	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
 	<damage>2</damage>
@@ -1071,7 +1071,7 @@
 	<power>2</power>
 	<cost>50</cost>
 	<bp>6</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<length>140</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -1297,8 +1297,8 @@
 <weaponBlueprint name="BOMB_BREACH_PLAYER">
 	<type>BOMB</type>
 	<tip>tip_bombs</tip>
-	<title>Breach Bomb+</title>
-	<short>Breach+</short>
+	<title>Breach Bomb†</title>
+	<short>Breach†</short>
 	<locked>1</locked>
 	<desc>Self-teleporting explosive designed to damage systems and cause a breach. Can target your own ship.</desc>
 	<tooltip>Bomb weapon; requires a missile; does 1 damage to systems, and creates a hull breach. Can target your own ship.</tooltip>
@@ -1475,15 +1475,16 @@
 	<desc>Modified projectile weapon that fires 2 shield piercing crystals.</desc>
 	<tooltip>Pierces 1 shield; fires 2 crystals that deal 1 damage each.</tooltip>
 	<damage>1</damage>
+	<lockdown>1</lockdown>
 	<shots>2</shots>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
-	<breachChance>1</breachChance>
+	<breachChance>3</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>15</cooldown>
-	<power>2</power>
+	<cooldown>14</cooldown>
+	<power>1</power>
 	<speed>50</speed>
-	<cost>20</cost>
+	<cost>40</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>crystal_shard2</image>
@@ -1514,17 +1515,18 @@
 	<short>Crystal B. II</short>
 	<desc>Modified projectile weapon that fires 3 shield piercing crystals.</desc>
 	<tooltip>Pierces 1 shield; fires 3 crystals that deal 1 damage each.</tooltip>
-	<damage>1</damage>
 	<tip>tip_crystal</tip>
+	<damage>1</damage>
+	<lockdown>1</lockdown>
 	<shots>3</shots>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
-	<breachChance>1</breachChance>
+	<breachChance>3</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>17</cooldown>
-	<power>3</power>
+	<cooldown>16</cooldown>
+	<power>2</power>
 	<speed>50</speed>
-	<cost>20</cost>
+	<cost>60</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>crystal_shard2</image>
@@ -1557,15 +1559,16 @@
 	<desc>Modified projectile weapon that fires a shield piercing large crystal.</desc>
 	<tooltip>Pierces 1 shield; fires 1 crystal that deals 2 damage.</tooltip>
 	<damage>2</damage>
+	<lockdown>1</lockdown>
 	<shots>1</shots>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
-	<breachChance>1</breachChance>
+	<breachChance>3</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>13</cooldown>
+	<cooldown>12</cooldown>
 	<power>1</power>
 	<speed>50</speed>
-	<cost>20</cost>
+	<cost>40</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>crystal_shard3</image>
@@ -1598,15 +1601,16 @@
 	<desc>Modified projectile weapon that fires a shield piercing large crystal.</desc>
 	<tooltip>Pierces 1 shield; fires 1 crystal that deals 4 damage and causes a hull breach.</tooltip>
 	<damage>4</damage>
+	<lockdown>1</lockdown>
 	<shots>1</shots>
 	<sp>1</sp>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>19</cooldown>
-	<power>3</power>
+	<cooldown>17</cooldown>
+	<power>2</power>
 	<speed>50</speed>
-	<cost>20</cost>
+	<cost>50</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>crystal_shard3</image>
@@ -1630,6 +1634,70 @@
 	<weaponArt>crystal_heavy_2</weaponArt>
 	<iconImage>crystalH</iconImage>
 </weaponBlueprint>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
+												   DRONES
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+<!-- 
+**********************************************************************************************************************
+                                                    CREW DRONES 
+**********************************************************************************************************************
+-->
+<droneBlueprint name="BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_boarding</tip>
+	<title>Boarding Drone</title>
+	<short>Boarding</short>
+	<desc>Powerful controllable drone that can fight enemy crew and sabotage systems. If all enemy crew are successfully defeated and the drone is not destroyed, your drone part will be returned.</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>70</cost>
+	<rarity>4</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<droneBlueprint name="BATTLE">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_crew</tip>
+	<title>Anti-Personnel Drone</title>
+	<short>Anti-Pers.</short>
+	<desc>Controllable defensive drone that can fight off enemy crew that have boarded your ship.</desc>
+	<power>2</power>
+	<cost>35</cost>
+	<rarity>3</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
+												   AUGMENTS
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+<!-- 
+**********************************************************************************************************************
+                                                    RACE
+**********************************************************************************************************************
+-->
+<augBlueprint name="NANO_MEDBAY">
+	<title>Engi Med-bot Dispersal</title>
+	<desc>Engi nano med-bots heal the crew outside of the med-bay (at a reduced speed). Healing scales with medbay power.</desc>
+	<cost>60</cost>
+	<bp>12</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<value>0</value>
+</augBlueprint>
 
 <!-- 
 ********************************************************************************************************************************************************************************************************************************************
@@ -1839,7 +1907,7 @@
 	<crewCount amount="1" class="human" />
 	<crewCount amount="2" class="engi" />
 </shipBlueprint>
-<shipBlueprint name="PLAYER_SHIP_CIRCLE_2" layout="circle_cruiser_2" img="circle_cruiser_2">
+<shipBlueprint name="PLAYER_SHIP_ENGI_2" layout="circle_cruiser_2" img="circle_cruiser_2">
 	<class>Engi Cruiser</class>
 	<name>The Vortex</name>
 	<unlock id="ship_PLAYER_SHIP_ENGI_2_unlock"/>
@@ -1873,7 +1941,7 @@
 			</slot>
 		</weapons>
 		<drones power="3" room="7" start="true" img="room_drones_6" />
-		<medbay power="1" room="6" start="true" img="room_medbay_6">
+		<medbay power="2" room="6" start="true" img="room_medbay_6">
 			<slot>
 				<number>-2</number>
 			</slot>
@@ -1892,15 +1960,16 @@
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
 	<weaponList count="2" missiles="0">
-		<weapon name="ION_2" />
+		<weapon name="ION_1" />
 		<weapon name="LASER_HEAVY_1" />
 	</weaponList>
 	<droneList count="3" drones="6">
+		<drone name="BOARDER" />
 		<drone name="BATTLE" />
-		<drone name="REPAIR" />
 		<drone name="REPAIR" />
 	</droneList>
 	<aug name="DRONE_SPEED" />
+	<aug name="NANO_MEDBAY" />
 	<health amount="30" />
 	<maxPower amount="9" />
 	<crewCount amount="1" class="engi" />
@@ -2343,7 +2412,7 @@
 	<weaponList count="3" missiles="15">
 		<weapon name="BEAM_BIO" />
 		<weapon name="BOMB_BREACH_1" />
-		<weapon name="LASER_BURST_2" />
+		<weapon name="LASER_BURST_2_PLAYER" />
 	</weaponList>
 	<aug name="SLUG_GEL" />
 	<health amount="30" />
@@ -2401,7 +2470,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList count="2" missiles="25">
 		<weapon name="BOMB_HEAL" />
-		<weapon name="MISSILES_2" />
+		<weapon name="MISSILES_2_PLAYER" />
 	</weaponList>
 	<droneList drones="0" />
 	<aug name="SLUG_GEL" />
@@ -2585,7 +2654,7 @@
 	</systemList>
 	<weaponList count="2" missiles="0">
 		<weapon name="BEAM_1" />
-		<weapon name="LASER_BURST_2" />
+		<weapon name="LASER_BURST_2_PLAYER" />
 	</weaponList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
@@ -2667,6 +2736,7 @@
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<aug name="ADV_SCANNERS" />
+	<aug name="SYSTEM_CASING" />
 	<droneList count="0" drones="0" />
 	<health amount="30" />
 	<maxPower amount="7" />

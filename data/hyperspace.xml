@@ -40,6 +40,32 @@
     	<function name="BOARDER_RECOVERY" value="1" useForReqs="true"/>
 		<function name="MIND_ORDER" value="1" useForReqs="true"/>
     </aug>
+	<aug name="NANO_MEDBAY">
+		<statBoosts>
+			<statBoost name="healAmount">
+				<boostType>FLAT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>1.6</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<medbay/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>1.5</twoPwr>
+					<threePwr>3</threePwr>
+				</systemPowerScaling>
+				<systemRoomTarget>NONE</systemRoomTarget>
+				<systemList>
+				  <medbay/>
+				</systemList>
+			</statBoost>
+		</statBoosts>
+    </aug>
 </augments>
 
 <ships hideFirstShipPage="true">
@@ -282,4 +308,35 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		<hiddenAug>DEFAULTS</hiddenAug>
 	</customShip>
 </ships>
+
+<crew>
+	<race name="battle">
+		<controllable>true</controllable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>175</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+	</race>
+</crew>
+
+<drones>
+	<drone name="BOARDER">
+		<crewBlueprint>battle</crewBlueprint>
+		<tooltipName>Boarding Drone</tooltipName>
+	</drone>
+	<drone name="BATTLE">
+		<crewBlueprint>battle</crewBlueprint>
+		<tooltipName>Anti-Person Drone</tooltipName>
+	</drone>
+</drones>
 </FTL>

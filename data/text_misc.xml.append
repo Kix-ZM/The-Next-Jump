@@ -2,7 +2,7 @@
 <text name="no_time_sector">Upon examining your map, you realize you just won't have time and need to get to the next sector! You leave the quest for another day.</text>
 
 <text name="no_type_c">Hangar Empty</text>
-<text name="window_title">FTL: FASTER THAN LIGHT</text>
+<text name="window_title">FTL: The Next Jump</text>
 <text name="version">\1 (Mod 1.0, Hyperspace 0.8)</text>
 
 <text name="fire_chance">Fire Chance: \1%</text>  <!-- \1: chance (chance_* string) -->

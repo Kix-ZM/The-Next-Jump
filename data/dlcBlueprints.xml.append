@@ -592,8 +592,8 @@
 	<drone_targetable>1</drone_targetable>
 	<flavorType>Physical Projectile Blast</flavorType>
 	<tip>tip_flak</tip>
-	<title>Flak Gun Mark I+</title>
-	<short>Flak I+</short>
+	<title>Flak Gun Mark I†</title>
+	<short>Flak I†</short>
 	<desc>Fires a blast of debris across a random area doing up to 3 damage. Good at taking down shields but hard to aim.</desc>
 	<tooltip>Fires a blast of debris across a random area doing up to 3 damage.</tooltip>
 	<radius>40</radius>
@@ -882,6 +882,83 @@
 	<crewCount amount = "1" class="engi"/>
 	<crewCount amount = "2" class="anaerobic"/>
 	<aug name="O2_MASKS"/>
+	<shieldImage>anaerobic_cruiser</shieldImage>
+	<cloakImage>anaerobic_cruiser</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_LANIUS_3" layout="anaerobic_cruiser_3" img="anaerobic_cruiser_3">
+	<class>Lanius Cruiser</class>
+	<name>Elestia</name>
+	<unlock id="ship_PLAYER_SHIP_LANIUS_3_unlock"/>
+	<desc>Being both from ancient empires from distant pasts, the Lanius and Crystals share both an archaic past and space on this cruiser.</desc>
+	<systemList>
+		<battery power="1" room="5" start="false" img="room_battery_13" />
+		<cloaking power="1" room="17" start="false" img="room_cloaking_9" />
+		<clonebay power="1" room="9" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="false" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="7" start="false" img="room_drones_4" />
+		<engines power="1" room="4" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="11" start="false" img="room_hacking_4" />
+		<medbay power="1" room="9" start="false" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="10" start="false" img="room_mind_3" />
+		<oxygen power="1" room="6" start="true" img="room_oxygen_9" />
+		<pilot power="1" room="8" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="15" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="0" start="true" img="room_shields_10">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="16" start="false" />
+		<weapons power="3" room="1" start="true" img="room_weapons_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="9" count="4">
+		<weapon name="CRYSTAL_BURST_1" />
+		<weapon name="BOMB_BREACH_1" />
+	</weaponList>
+	<droneList drones="9" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="anaerobic" />
+	<crewCount amount="1" class="anaerobic" />
+	<crewCount amount="1" class="crystal" />
+	<aug name="O2_MASKS" />
 	<shieldImage>anaerobic_cruiser</shieldImage>
 	<cloakImage>anaerobic_cruiser</cloakImage>
 </shipBlueprint>
