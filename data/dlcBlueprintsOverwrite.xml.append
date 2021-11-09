@@ -310,7 +310,7 @@
 			</slot>
 		</shields>
 		<engines power="2" room="5" start="true" img="room_engines"/>
-		<weapons power="2" room="2" start="true" img="room_weapons_2"/>
+		<weapons power="3" room="2" start="true" img="room_weapons_2"/>
 		<drones power="2" room="6" start="false" img="room_drones_13"/>
 		<teleporter power="1" room="4"	start="false"/>
 		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/>
@@ -332,7 +332,7 @@
 	<droneList count="0" drones="3">
 	</droneList>
 	<health amount="30"/>
-	<maxPower amount ="7"/> 
+	<maxPower amount ="8"/> 
 	<crewCount amount = "1" class="human"/>
 	<crewCount amount = "1" class="anaerobic"/>
 	<crewCount amount = "1" class="human"/>
@@ -820,7 +820,7 @@
 	<floorImage>stealth</floorImage>
 </shipBlueprint> 
 
-<shipBlueprint name="PLAYER_SHIP_CRYSTAL_3" layout="crystal_cruiser_3" img="crystal_cruiser_3">
+<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_3" layout="crystal_cruiser_3" img="crystal_cruiser_3">
 	<class>Crystal Cruiser</class>
 	<name>Amber</name>
 	<desc>Though the crystals might not possess the same immunities to fire as their rock desendants, their lockdown abilities provide a unique advatange paired with flames.</desc>
@@ -892,7 +892,7 @@
 	<crewCount amount="1" class="crystal" />
 	<crewCount amount="1" class="rock" />
 	<aug name="CRYSTAL_SHARDS" />
-	<shieldImage>crystal</shieldImage>
-	<cloakImage>crystal</cloakImage>
+	<shieldImage>crystal_cruiser</shieldImage>
+	<cloakImage>crystal_cruiser</cloakImage>
 </shipBlueprint>
 </FTL>
