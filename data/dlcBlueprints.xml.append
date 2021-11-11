@@ -3,6 +3,90 @@
 ********************************************************************************************************************************************************************************************************************************************
 ********************************************************************************************************************************************************************************************************************************************                                               
 
+												   SETTUP
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+<blueprintList name="DLC_ITEMS">
+	<name>BOMB_HEAL_SYSTEM</name>
+	<name>SHOTGUN_PLAYER</name>
+	<name>SHOTGUN</name>
+	<name>SHOTGUN_2</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>LASER_CHAINGUN</name>
+	<name>LASER_CHAINGUN_2</name>
+	<name>LASER_CHARGEGUN</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>ION_CHAINGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>BOMB_STUN</name>
+	
+	<name>PDS_SHOT</name>
+	
+	<name>DRONE_HACKING</name>
+	<name>BOARDER_ION</name>
+	<name>DRONE_SHIELD</name>
+	<name>DRONE_SHIELD_PLAYER</name>
+	<name>ANTI_DRONE</name>
+	<name>COMBAT_FIRE</name>
+	
+	<name>anaerobic</name>
+	
+	<name>O2_MASKS</name>
+	<name>EXPLOSIVE_REPLICATOR</name>
+	<name>FIRE_EXTINGUISHERS</name>
+	<name>FLEET_DISTRACTION</name>
+	<name>TELEPORT_HEAL</name>
+	<name>BATTERY_BOOSTER</name>
+	<name>DEFENSE_SCRAMBLER</name>
+	<name>BACKUP_DNA</name>
+	<name>LIFE_SCANNER</name>
+	<name>ZOLTAN_BYPASS</name>
+	<name>HACKING_STUN</name>
+</blueprintList>
+
+<blueprintList name="DLC_WEAPONS">
+	<name>BOMB_HEAL_SYSTEM</name>
+	<name>SHOTGUN</name>
+	<name>SHOTGUN_2</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>LASER_CHAINGUN</name>
+	<name>LASER_CHAINGUN_2</name>
+	<name>ION_CHAINGUN</name>
+	<name>LASER_CHARGEGUN</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>BOMB_STUN</name>
+</blueprintList>
+
+<blueprintList name="DLC_DRONES">
+	<name>BOARDER_ION</name>
+	<name>DRONE_SHIELD</name>
+	<name>ANTI_DRONE</name>
+	<name>COMBAT_FIRE</name>
+</blueprintList>
+
+<blueprintList name="DLC_AUGMENTS">
+	<name>O2_MASKS</name>
+	<name>EXPLOSIVE_REPLICATOR</name>
+	<name>FIRE_EXTINGUISHERS</name>
+	<name>FLEET_DISTRACTION</name>
+	<name>TELEPORT_HEAL</name>
+	<name>BATTERY_BOOSTER</name>
+	<name>DEFENSE_SCRAMBLER</name>
+	<name>BACKUP_DNA</name>
+	<name>LIFE_SCANNER</name>
+	<name>ZOLTAN_BYPASS</name>
+	<name>HACKING_STUN</name>
+</blueprintList>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
 												   WEAPONS
 
 ********************************************************************************************************************************************************************************************************************************************												 
@@ -687,6 +771,48 @@
 ********************************************************************************************************************************************************************************************************************************************
 ********************************************************************************************************************************************************************************************************************************************                                               
 
+												   DRONES
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+<!-- 
+**********************************************************************************************************************
+                                                    COMBAT DRONES 
+**********************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                                    CREW DRONES 
+**********************************************************************************************************************
+-->
+<crewBlueprint name="manning">
+	<desc>Dummy blueprint needed now.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Manager</title>
+	<short>Manager</short>
+	<rarity>0</rarity>
+	<powerList />
+</crewBlueprint>
+<droneBlueprint name="MANNING">
+	<type>REPAIR</type>
+	<tip>tip_crew</tip>
+	<title>Manager Drone</title>
+	<short>Manager</short>
+	<desc>A skilled drone that can man systems at the same profficiency as a crew member with level 2 skills.</desc>
+	<power>1</power>
+	<cost>30</cost>
+	<bp>2</bp>
+	<rarity>1</rarity>
+	<iconImage>repair</iconImage>
+</droneBlueprint>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
 												  ENEMIES
 
 ********************************************************************************************************************************************************************************************************************************************												 
@@ -806,90 +932,10 @@
 	<cloakImage>anaerobic_cruiser</cloakImage>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_LANIUS_2" layout="anaerobic_cruiser_2" img="anaerobic_cruiser_2">
-	<class>Lanius Cruiser</class>
-	<name>The Shrike</name>
-	<unlock id="ship_PLAYER_SHIP_LANIUS_2_unlock"/>
-	<desc>The racial ability of the Lanius make them fearsome combatants in small quarters. Combine that with a Mind Control system and this ship is a force to be reckoned with.</desc>
-	<systemList>
-		<pilot power="1" room="9" start="true">
-			<slot>
-				<direction>right</direction>
-				<number>0</number> 
-			</slot>
-		</pilot>  
-		<doors power="1" room="16" start="true" img="room_doors_2">  
-			<slot>
-				<direction>down</direction>
-				<number>0</number>
-			</slot>
-		</doors>
-		<sensors power="1" room="0" start="false" img="room_sensors_2"> <!--F-->
-			<slot>
-				<direction>up</direction>
-				<number>0</number>
-			</slot>
-		</sensors>
-		<oxygen power="1" room="5" start="true"/>
-		<engines power="1" room="8" start="true" img="room_engines_2">
-			<slot>
-				<direction>down</direction>
-				<number>2</number>
-			</slot>
-		</engines>
-		<shields power="2" room="4" start="true" img="room_shields_3">
-			<slot>
-				<direction>left</direction>
-				<number>2</number>
-			</slot>
-		</shields>
-		<weapons power="1" room="13" start="true" img="room_weapons_10">
-			<slot>
-				<direction>up</direction>
-				<number>0</number>
-			</slot>
-		</weapons>
-		<drones power="2" room="2" start="false" img="room_drones_7"/> <!--F-->
-		<clonebay power="1" room="11" start="true">
-			<slot>
-				<number>2</number>
-			</slot>
-		</clonebay>
-		<medbay power="1" room="11" start="false" img="room_medbay_7"> <!--F-->
-			<slot>
-				<number>2</number>
-			</slot>
-		</medbay>
-		<teleporter power="1" room="12" start="true"/>  
-		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/> <!--F-->
-		<mind power="1" room="17" start="true" img="room_mind_3"/> 
-		<battery power="1" room="15" start="false" img="room_battery_12"/>  <!--F-->
-		<hacking power="1" room="3" start="false" img="room_hacking_4">  <!--F-->
-			<slot>
-				<direction>up</direction>
-				<number>0</number>
-			</slot>
-		</hacking>
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList count="1" missiles="0">
-		<weapon name="SHOTGUN_PLAYER"/>
-	</weaponList>
-	<droneList drones="0"/>
-	<health amount="30"/>
-	<maxPower amount ="8"/> 
-	<crewCount amount = "1" class="engi"/>
-	<crewCount amount = "2" class="anaerobic"/>
-	<aug name="O2_MASKS"/>
-	<shieldImage>anaerobic_cruiser</shieldImage>
-	<cloakImage>anaerobic_cruiser</cloakImage>
-</shipBlueprint>
-
-<shipBlueprint name="PLAYER_SHIP_LANIUS_3" layout="anaerobic_cruiser_3" img="anaerobic_cruiser_3">
+<shipBlueprint name="PLAYER_SHIP_LANIUS_2" layout="anaerobic_cruiser_3" img="anaerobic_cruiser_3">
 	<class>Lanius Cruiser</class>
 	<name>Elestia</name>
-	<unlock id="ship_PLAYER_SHIP_LANIUS_3_unlock"/>
+	<unlock id="ship_PLAYER_SHIP_LANIUS_2_unlock"/>
 	<desc>Being both from ancient empires from distant pasts, the Lanius and Crystals share both an archaic past and space on this cruiser.</desc>
 	<systemList>
 		<battery power="1" room="5" start="false" img="room_battery_13" />
@@ -959,6 +1005,86 @@
 	<crewCount amount="1" class="anaerobic" />
 	<crewCount amount="1" class="crystal" />
 	<aug name="O2_MASKS" />
+	<shieldImage>anaerobic_cruiser</shieldImage>
+	<cloakImage>anaerobic_cruiser</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_LANIUS_3" layout="anaerobic_cruiser_2" img="anaerobic_cruiser_2">
+	<class>Lanius Cruiser</class>
+	<name>The Shrike</name>
+	<unlock id="ship_PLAYER_SHIP_LANIUS_3_unlock"/>
+	<desc>The racial ability of the Lanius make them fearsome combatants in small quarters. Combine that with a Mind Control system and this ship is a force to be reckoned with.</desc>
+	<systemList>
+		<pilot power="1" room="9" start="true">
+			<slot>
+				<direction>right</direction>
+				<number>0</number> 
+			</slot>
+		</pilot>  
+		<doors power="1" room="16" start="true" img="room_doors_2">  
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="0" start="false" img="room_sensors_2"> <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="5" start="true"/>
+		<engines power="1" room="8" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<shields power="2" room="4" start="true" img="room_shields_3">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<weapons power="1" room="13" start="true" img="room_weapons_10">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+		<drones power="2" room="2" start="false" img="room_drones_7"/>
+		<clonebay power="1" room="11" start="true">
+			<slot>
+				<number>2</number>
+			</slot>
+		</clonebay>
+		<medbay power="1" room="11" start="false" img="room_medbay_7">
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<teleporter power="1" room="12" start="true"/>  
+		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/>
+		<mind power="1" room="17" start="true" img="room_mind_3"/> 
+		<battery power="1" room="15" start="false" img="room_battery_12"/>
+		<hacking power="1" room="3" start="false" img="room_hacking_4">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList count="1" missiles="0">
+		<weapon name="SHOTGUN_PLAYER"/>
+	</weaponList>
+	<droneList drones="0"/>
+	<health amount="30"/>
+	<maxPower amount ="8"/> 
+	<crewCount amount = "1" class="engi"/>
+	<crewCount amount = "2" class="anaerobic"/>
+	<aug name="O2_MASKS"/>
 	<shieldImage>anaerobic_cruiser</shieldImage>
 	<cloakImage>anaerobic_cruiser</cloakImage>
 </shipBlueprint>

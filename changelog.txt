@@ -26,9 +26,11 @@ Renamed the Kestrel Cruisers to Federation Cruisers.
 
 Re-ordered various crew on ships so lanius dont spawn in piloting.
 
-Added a new Lanius C.
+Moved Lanius B and Crystal B to the C slot. Added a new Lanius and Crystal B.
 
-Changed the Kestrel B and C's sprites. Modified Slug C.
+Changed various other cruiser sprites.
+
+Reworked Kestrel C, Engi B, Engi C,
 
 Exchanged one of the repair drones on Engi B for a boarding drone. Increased medbay power by 1. Added medbots.
 
@@ -64,9 +66,13 @@ Modified many projectile images.
 
 /////////////////DRONES/////////////////
 
-Greatly enhanced the strength of anti-personnel and boarding drones.
+Enhanced the stats of all crew drones.
 
 Resprited the overcharger drone.
+
+Added the Manager Drone as an AE exclusive drone.
+
+Combat Beam Mk 2 is no longer AE exclusive.
 
 /////////////////AUGMENTS/////////////////
 

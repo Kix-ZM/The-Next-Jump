@@ -11,6 +11,40 @@
 
 <!-- 
 **********************************************************************************************************************
+                                                    MISC LISTS
+**********************************************************************************************************************
+-->
+<blueprintList name="DRONES_STANDARD">
+	<name>COMBAT_1</name>
+	<name>COMBAT_2</name>
+	<name>COMBAT_BEAM</name>
+	<name>COMBAT_BEAM_2</name>
+	<name>DEFENSE_1</name>
+	<name>DEFENSE_2_ENEMY</name>
+	<name>REPAIR</name>
+	<name>BATTLE</name>
+	<name>BOARDER</name>
+</blueprintList>
+
+<blueprintList name="DRONES_COMBAT">
+	<name>COMBAT_1</name>
+	<name>COMBAT_2</name>
+	<name>COMBAT_BEAM</name>
+	<name>COMBAT_BEAM_2</name>
+</blueprintList>
+
+<blueprintList name="DRONES_INTERNAL">
+	<name>REPAIR</name>
+	<name>BATTLE</name>
+</blueprintList>
+
+<blueprintList name="DRONES_DEFENSE">
+	<name>DEFENSE_1</name>
+	<name>DEFENSE_2_ENEMY</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
                                                     REBELS 
 **********************************************************************************************************************
 -->

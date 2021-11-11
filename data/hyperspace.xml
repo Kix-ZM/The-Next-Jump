@@ -315,8 +315,8 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		<canFight>true</canFight>
 		<canSabotage>true</canSabotage>
 		<canRepair>false</canRepair>
-		<canSuffocate>false</canSuffocate>
 		<canMan>false</canMan>
+		<canSuffocate>false</canSuffocate>
 		<maxHealth>175</maxHealth>
 		<stunMultiplier>0.25</stunMultiplier>
 		<damageMultiplier>1.1</damageMultiplier>
@@ -324,6 +324,40 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<droneAI>
 			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+	</race>
+	<race name="repair">
+		<controllable>true</controllable>
+		<canRepair>true</canRepair>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canMan>false</canMan>
+		<canSuffocate>false</canSuffocate>
+		<maxHealth>75</maxHealth>
+		<repairSpeed>3.0</repairSpeed>
+		<stunMultiplier>0.25</stunMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<droneAI>
+			<repairAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+	</race>
+	<race name="manning">
+		<controllable>true</controllable>
+		<canMan>true</canMan>
+		<canRepair>false</canRepair>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<maxHealth>120</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<defaultSkillLevel>2</defaultSkillLevel>
+		<droneAI>
+			<manAI/>
 			<returnToDroneRoom/>
 		</droneAI>
 	</race>
@@ -336,6 +370,10 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 	</drone>
 	<drone name="BATTLE">
 		<crewBlueprint>battle</crewBlueprint>
+		<tooltipName>Anti-Person Drone</tooltipName>
+	</drone>
+	<drone name="MANNING">
+		<crewBlueprint>manning</crewBlueprint>
 		<tooltipName>Anti-Person Drone</tooltipName>
 	</drone>
 </drones>

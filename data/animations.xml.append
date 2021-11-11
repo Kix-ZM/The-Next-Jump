@@ -276,4 +276,92 @@
 	<time>1</time>
 </anim>
 
+<animSheet name="manning" w="455" h="315" fw="35" fh="35">people/manning_base.png</animSheet>
+<animSheet name="manning_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="manning_death_right">
+	<sheet>manning_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_death_left">
+	<sheet>manning_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_walk_down">
+	<sheet>manning</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_walk_right">
+	<sheet>manning</sheet>
+	<desc length="4" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_walk_up">
+	<sheet>manning</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_walk_left">
+	<sheet>manning</sheet>
+	<desc length="4" x="4" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_shoot_down">
+	<sheet>manning</sheet>
+	<desc length="4" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_shoot_right">
+	<sheet>manning</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_shoot_up">
+	<sheet>manning</sheet>
+	<desc length="4" x="4" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_shoot_left">
+	<sheet>manning</sheet>
+	<desc length="4" x="4" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_type_right">
+	<sheet>manning</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="manning_type_left">
+	<sheet>manning</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="manning_type_up">
+	<sheet>manning</sheet>
+	<desc length="4" x="4" y="3"/>
+	<time>1</time>
+</anim>
+<anim name="manning_type_down">
+	<sheet>manning</sheet>
+	<desc length="4" x="0" y="3"/>
+	<time>1</time>
+</anim>
+<anim name="manning_power_down">
+	<sheet>manning</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_power_up">
+	<sheet>manning</sheet>
+	<desc length="13" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="manning_portrait">
+	<sheet>manning</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
 </FTL>

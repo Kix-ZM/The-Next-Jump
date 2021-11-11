@@ -11,6 +11,49 @@
 
 <!-- 
 **********************************************************************************************************************
+                                                    MISC LISTS
+**********************************************************************************************************************
+-->
+<blueprintList name="OVERRIDE_DRONES_STANDARD">
+	<name>COMBAT_1</name>
+	<name>COMBAT_2</name>
+	<name>COMBAT_BEAM</name>
+	<name>COMBAT_BEAM_2</name>	
+	<name>DEFENSE_1</name>
+	<name>DEFENSE_2_ENEMY</name>
+	<name>REPAIR</name>
+	<name>BATTLE</name>
+	<name>BOARDER</name>
+	
+	<name>BOARDER_ION</name>
+	<name>DRONE_SHIELD</name>
+	<name>ANTI_DRONE</name>
+	
+	<name>COMBAT_FIRE</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_DRONES_COMBAT">
+	<name>COMBAT_1</name>
+	<name>COMBAT_2</name>
+	<name>COMBAT_BEAM</name>
+	
+	<name>COMBAT_BEAM_2</name>
+	<name>COMBAT_FIRE</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_DRONES_INTERNAL">
+	<name>REPAIR</name>
+	<name>BATTLE</name>
+</blueprintList>
+
+<blueprintList name="OVERRIDE_DRONES_DEFENSE">
+	<name>DEFENSE_1</name>
+	<name>DEFENSE_2_ENEMY</name>
+	<name>ANTI_DRONE</name>
+</blueprintList>
+
+<!-- 
+**********************************************************************************************************************
                                                     REBELS 
 **********************************************************************************************************************
 -->
@@ -270,84 +313,86 @@
 -->
 <shipBlueprint name="PLAYER_SHIP_KESTREL_3" layout="kestral_3" img="kestral_3">
 	<class>Kestrel Cruiser</class>
-	<name>The Swallow</name>
+	<name>The Oriole</name>
 	<unlock id="ship_PLAYER_SHIP_KESTREL_3_unlock"/>
-	<unlock>Get to Sector 8 with the Kestrel Cruiser Type B and Advanced Mode enabled to unlock this ship.</unlock>
+	<desc>While chain weaponry may not be popular with all captains, this ship prioritizes getting its lasers up and running for peak performance.</desc>
 	<systemList>
-		<pilot power="1" room="11" start="true" img="room_pilot"> 
+		<battery power="1" room="8" start="false" img="room_battery_6" />
+		<cloaking power="1" room="1" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="9" start="true">
 			<slot>
-				<direction>right</direction>
-				<number>0</number> 
+				<number>1</number>
 			</slot>
-		</pilot>
+		</clonebay>
 		<doors power="1" room="10" start="true" img="room_doors">
 			<slot>
 				<direction>up</direction>
-				<number>1</number> 
+				<number>1</number>
 			</slot>
 		</doors>
+		<drones power="2" room="6" start="false" img="room_drones_13" />
+		<engines power="2" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="14" start="false" img="room_hacking" />
+		<medbay power="1" room="9" start="false" img="room_medbay_8">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="16" start="false" img="room_mind_1" />
+		<oxygen power="1" room="7" start="true" img="room_oxygen_10" />
+		<pilot power="1" room="11" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
 		<sensors power="2" room="13" start="true" img="room_sensors">
 			<slot>
 				<direction>down</direction>
-				<number>1</number> 
+				<number>1</number>
 			</slot>
-		</sensors>   
-		<medbay power="1" room="9" start="false" img="room_medbay_8">
-			<slot>
-				<number>1</number> 
-			</slot>
-		</medbay>
-		<clonebay power="1" room="9" start="true"> 
-			<slot>
-				<number>1</number> 
-			</slot>
-		</clonebay>
-		<oxygen power="1"  room="7" start="true" img="room_oxygen_10"/>
+		</sensors>
 		<shields power="2" room="12" start="true" img="room_shields_3">
 			<slot>
 				<direction>left</direction>
-				<number>2</number> 
+				<number>2</number>
 			</slot>
 		</shields>
-		<engines power="2" room="5" start="true" img="room_engines"/>
-		<weapons power="3" room="2" start="true" img="room_weapons_2"/>
-		<drones power="2" room="6" start="false" img="room_drones_13"/>
-		<teleporter power="1" room="4"	start="false"/>
-		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/>
-		<battery power="1" room="8" start="false" img="room_battery_6"/>
-		<mind power="1" room="16" start="false" img="room_mind_1"/>
-		<hacking power="1" room="14" start="false" img="room_hacking">
+		<teleporter power="1" room="4" start="false" />
+		<weapons power="3" room="2" start="true" img="room_weapons_2">
 			<slot>
-				<direction>down</direction>
-				<number>0</number> 
+				<direction>up</direction>
+				<number>1</number>
 			</slot>
-		</hacking>
+		</weapons>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="2" missiles="4">
-		<weapon name="LASER_BURST_2"/>
-		<weapon name="ION_STUN"/>
+	<weaponList missiles="6" count="4">
+		<weapon name="LASER_CHAINGUN" />
+		<weapon name="LASER_CHAINGUN" />
 	</weaponList>
-	<droneList count="0" drones="3">
-	</droneList>
-	<health amount="30"/>
-	<maxPower amount ="8"/> 
-	<crewCount amount = "1" class="human"/>
-	<crewCount amount = "1" class="anaerobic"/>
-	<crewCount amount = "1" class="human"/>
-	<shieldImage>kestral</shieldImage>
-	<cloakImage>kestral</cloakImage>
-	<floorImage>kestral</floorImage>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="anaerobic" />
+	<crewCount amount="1" class="rock" />
+	<aug name="AUTO_COOLDOWN" />
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_ENGI_3" layout="circle_cruiser_3" img="circle_cruiser_3">
 	<class>Engi Cruiser</class>
 	<name>Tetragon</name>
 	<unlock id="ship_PLAYER_SHIP_ENGI_3_unlock"/>
-	<desc>The Engi were quick to adapt to the sudden surge of hacking technology - this ship is the result of their research.</desc>
+	<desc>Heavily understaffed, this ship relies on drones to keep the ship running as well as boarding drones to disrupt the enemy crew.</desc>
 	<systemList>  
-		<pilot power="1" room="14" start="true"/>    
+		<pilot power="2" room="14" start="true"/>    
 		<doors power="1" room="16" start="true" img="room_doors_2">
 			<slot>
 				<direction>down</direction>
@@ -361,7 +406,7 @@
 			</slot>
 		</sensors>  
 		<oxygen power="1" room="0" start="true" img="room_oxygen_13"/>
-		<engines power="2" room="10" start="true" img="room_engines_2"> 
+		<engines power="1" room="10" start="true" img="room_engines_2"> 
 			<slot>
 				<direction>down</direction>
 				<number>1</number> 
@@ -369,7 +414,7 @@
 		</engines>  
 		<shields power="2" room="8" start="true" img="room_shields_4"/> 
 		<weapons power="1" room="6" start="true"/> 
-		<drones power="2" room="7" start="true" img="room_drones_9"/> 
+		<drones power="4" room="7" start="true" img="room_drones_9"/> 
 		<medbay power="1" room="11" start="false" img="room_medbay_9">
 			<slot>
 				<number>-2</number> 
@@ -387,19 +432,22 @@
 			</slot>
 		</hacking>
 	</systemList>
-	<weaponSlots>3</weaponSlots>
-	<droneSlots>3</droneSlots>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
 	<weaponList count="1" missiles="0">
 		<weapon name="LASER_BURST_2_PLAYER"/>
 	</weaponList>
-	<droneList count="1" drones="25">
-		<drone name="COMBAT_BEAM"/>
+	<droneList count="4" drones="10">
+		<drone name="BOARDER"/>
+		<drone name="BATTLE"/>
+		<drone name="REPAIR"/>
+		<drone name="MANNING"/>
 	</droneList>
 	<health amount="30"/>
-	<maxPower amount ="9"/> 
-	<crewCount amount = "2" class="engi"/>
-	<crewCount amount = "1" class="anaerobic"/>
+	<maxPower amount ="10"/> 
+	<crewCount amount = "1" class="engi"/>
 	<aug name="DEFENSE_SCRAMBLER"/>
+	<aug name="DRONE_SPEED" />
 	<shieldImage>circle_cruiser</shieldImage>
 	<cloakImage>circle_cruiser</cloakImage>
 	<floorImage>circle_cruiser</floorImage>
@@ -820,79 +868,65 @@
 	<floorImage>stealth</floorImage>
 </shipBlueprint> 
 
-<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_3" layout="crystal_cruiser_3" img="crystal_cruiser_3">
+<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_3" layout="crystal_cruiser_2" img="crystal_cruiser_2">
 	<class>Crystal Cruiser</class>
-	<name>Amber</name>
-	<desc>Though the crystals might not possess the same immunities to fire as their rock desendants, their lockdown abilities provide a unique advatange paired with flames.</desc>
+	<name>Carnelian</name>
+	<unlock id="ship_PLAYER_SHIP_CRYSTAL_3_unlock"/>
+	<desc>Their unique racial ability makes the Crystal beings very adept at ship boarding. This ship was designed for such raiding parties.</desc>
 	<systemList>
-		<battery power="1" room="7" start="false" img="room_battery_8" />
-		<cloaking power="1" room="1" start="false" img="room_cloaking" />
-		<clonebay power="1" room="13" start="true">
+		<pilot power="1" room="15" start="true" />
+		<doors power="1" room="14" start="true" img="room_doors_7">
 			<slot>
+				<direction>up</direction>
 				<number>1</number>
 			</slot>
+		</doors>
+		<sensors power="1" room="10" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="8" start="true" img="room_oxygen_7" />
+		<engines power="2" room="2" start="true" img="room_engines_2" />
+		<shields power="2" room="1" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<weapons power="1" room="4" start="true" img="room_weapons_7" />
+		<drones power="2" room="13" start="false" img="room_drones_5" />
+		<medbay power="1" room="9" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<clonebay power="1" room="9" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
 		</clonebay>
-		<doors power="1" room="16" start="true" img="room_doors_2">
+		<teleporter power="1" room="3" start="true" />
+		<cloaking power="1" room="7" start="true" />
+		<battery power="1" room="12" start="false" img="room_battery_13" />
+		<mind power="1" room="0" start="false" img="room_mind_11" />
+		<hacking power="1" room="5" start="false" img="room_hacking_2">
 			<slot>
 				<direction>down</direction>
 				<number>0</number>
 			</slot>
-		</doors>
-		<drones power="2" room="4" start="false" img="room_drones_12" />
-		<engines power="2" room="5" start="true" img="room_engines_9">
-			<slot>
-				<direction>up</direction>
-				<number>1</number>
-			</slot>
-		</engines>
-		<hacking power="1" room="17" start="false" img="room_hacking_2" />
-		<medbay power="1" room="13" start="false" img="room_medbay">
-			<slot>
-				<number>1</number>
-			</slot>
-		</medbay>
-		<mind power="1" room="9" start="false" img="room_mind_6" />
-		<oxygen power="2" room="18" start="true" img="room_oxygen_13" />
-		<pilot power="1" room="0" start="true" img="room_pilot_2">
-			<slot>
-				<direction>right</direction>
-				<number>1</number>
-			</slot>
-		</pilot>
-		<sensors power="1" room="15" start="true" img="room_sensors_3">
-			<slot>
-				<direction>right</direction>
-				<number>1</number>
-			</slot>
-		</sensors>
-		<shields power="4" room="10" start="true" img="room_shields_2">
-			<slot>
-				<direction>left</direction>
-				<number>0</number>
-			</slot>
-		</shields>
-		<teleporter power="1" room="8" start="false" />
-		<weapons power="4" room="2" start="true" img="room_weapons_7">
-			<slot>
-				<direction>up</direction>
-				<number>1</number>
-			</slot>
-		</weapons>
+		</hacking>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="5" count="4">
-		<weapon name="CRYSTAL_BURST_2" />
-		<weapon name="BEAM_FIRE" />
-	</weaponList>
-	<droneList drones="0" count="2" />
+	<weaponList count="0" missiles="0"></weaponList>
+	<droneList drones="0" />
 	<health amount="30" />
-	<maxPower amount="10" />
-	<crewCount amount="1" class="crystal" />
-	<crewCount amount="1" class="crystal" />
-	<crewCount amount="1" class="rock" />
-	<aug name="CRYSTAL_SHARDS" />
+	<maxPower amount="8" />
+	<crewCount amount="3" class="crystal" />
 	<shieldImage>crystal_cruiser</shieldImage>
 	<cloakImage>crystal_cruiser</cloakImage>
+	<aug name="CRYSTAL_SHARDS" />
 </shipBlueprint>
 </FTL>
