@@ -267,6 +267,54 @@
 
 <!--
 **********************************************************************************************************************
+                                                 ARTILLERY 
+**********************************************************************************************************************
+-->
+<animSheet name="boss_1" w="264" h="65" fw="33" fh="65">weapons/boss_1_strip12.png</animSheet>
+<weaponAnim name="boss_1">
+	<sheet>boss_1</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="16" y="25"/>
+	<mountPoint x="0" y="0"/>
+	<chargeImage>weapons/boss_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="boss_2" w="99" h="65" fw="33" fh="65">weapons/boss_2_strip3.png</animSheet>
+<weaponAnim name="boss_2">
+	<sheet>boss_2</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="16" y="20"/>
+	<mountPoint x="0" y="0"/>
+	<chargeImage>weapons/boss_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="boss_3" w="264" h="65" fw="33" fh="65">weapons/boss_3_strip8.png</animSheet>
+<weaponAnim name="boss_3">
+	<sheet>boss_3</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="16" y="25"/>
+	<mountPoint x="0" y="0"/>
+	<chargeImage>weapons/boss_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="boss_4" w="264" h="65" fw="33" fh="65">weapons/boss_4_strip8.png</animSheet>
+<weaponAnim name="boss_4">
+	<sheet>boss_4</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="16" y="20"/>
+	<mountPoint x="0" y="0"/>
+</weaponAnim>
+
+<!--
+**********************************************************************************************************************
                                                  CREW DRONES 
 **********************************************************************************************************************
 -->

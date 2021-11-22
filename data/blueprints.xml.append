@@ -1663,6 +1663,52 @@
 ********************************************************************************************************************************************************************************************************************************************
 ********************************************************************************************************************************************************************************************************************************************                                               
 
+												   ARTILLERY
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+<weaponBlueprint name="ARTILLERY_BOSS_1">
+	<type>LASER</type>
+	<title>Laser Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: A relatively quick charging burst of lasers with moderate status effect chances.
+	Base Cooldown: 20</desc>
+	<tooltip>Artillery: A relatively quick charging burst of lasers with moderate status effect chances.</tooltip>
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>20</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>boss_1</weaponArt>
+</weaponBlueprint>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
 												   DRONES
 
 ********************************************************************************************************************************************************************************************************************************************												 
@@ -2602,128 +2648,151 @@
                                                     REBEL 
 **********************************************************************************************************************
 -->
-<shipBlueprint name="PLAYER_SHIP_REBEL" layout="fed_cruiser" img="fed_cruiser">
-	<class>Federation Cruiser</class>
-	<name>The Osprey</name>
+<shipBlueprint name="PLAYER_SHIP_REBEL" layout="rebel_cruiser" img="rebel_cruiser">
+	<class>Rebel Cruiser</class>
+	<name>Ajaccio</name>
 	<unlock id="ship_PLAYER_SHIP_REBEL_unlock"/>
-	<desc>This ship features the latest in Federation technology: an advanced beam weapon that pierces through shields.</desc>
+	<desc>This cruiser features a rare rebel artillery system, similar to the ones on the flagship itself!</desc>
 	<systemList>
-		<pilot power="1" room="4" start="true" />
-		<doors power="1" room="8" start="true" img="room_doors_5">
-			<slot>
-				<direction>right</direction>
-				<number>0</number>
-			</slot>
-		</doors>
-		<sensors power="1" room="13" start="true">
-			<slot>
-				<direction>down</direction>
-				<number>1</number>
-			</slot>
-		</sensors>
-		<oxygen power="1" room="9" start="true" img="room_oxygen_4" />
-		<engines power="2" room="3" start="true" img="room_engines_2" />
-		<shields power="2" room="11" start="true" />
-		<weapons power="2" room="15" start="true" />
-		<drones power="2" room="16" start="false" img="room_drones_5" />
-		<medbay power="1" room="10" start="true" />
-		<clonebay power="1" room="10" start="false" />
-		<teleporter power="1" room="1" start="false" />
-		<artillery power="1" room="6" weapon="ARTILLERY_FED" />
-		<cloaking power="1" room="12" start="false" img="room_cloaking_8" />
-		<battery power="1" room="14" start="false" img="room_battery_3" />
-		<mind power="1" room="5" start="false" img="room_mind_7" />
-		<hacking power="1" room="2" start="false" img="room_hacking_3">
-			<slot>
-				<direction>left</direction>
-				<number>0</number>
-			</slot>
-		</hacking>
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList count="1" missiles="5">
-		<weapon name="LASER_BURST_3" />
-	</weaponList>
-	<droneList drones="2" />
-	<droneList count="0" drones="0" />
-	<health amount="30" />
-	<maxPower amount="8" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="mantis" />
-	<crewCount amount="1" class="rock" />
-	<crewCount amount="1" class="engi" />
-</shipBlueprint>
-<shipBlueprint name="PLAYER_SHIP_REBEL_2" layout="fed_cruiser_2" img="fed_cruiser_2">
-	<class>Federation Cruiser</class>
-	<name>Nisos</name>
-	<unlock id="ship_PLAYER_SHIP_REBEL_2_unlock"/>
-	<desc>This ship starts with additional Artillery power, encouraging heavy reliance on the beam.</desc>
-	<systemList>
-		<pilot power="1" room="7" start="true" img="room_pilot_3">
-			<slot>
-				<direction>right</direction>
-				<number>1</number>
-			</slot>
-		</pilot>
-		<doors power="1" room="17" start="true" img="room_doors_2">
-			<slot>
-				<direction>down</direction>
-				<number>0</number>
-			</slot>
-		</doors>
-		<sensors power="1" room="0" start="true">
-			<slot>
-				<direction>down</direction>
-				<number>1</number>
-			</slot>
-		</sensors>
-		<oxygen power="1" room="8" start="true" img="room_oxygen_9" />
-		<engines power="2" room="15" start="true" img="room_engines_2" />
-		<shields power="2" room="14" start="true" img="room_shields_7">
-			<slot>
-				<direction>up</direction>
-				<number>1</number>
-			</slot>
-		</shields>
-		<weapons power="2" room="4" start="true" img="room_weapons_2" />
-		<drones power="2" room="2" start="false" img="room_drones_11" />
-		<medbay power="1" room="10" start="true" img="room_medbay_5">
-			<slot>
-				<number>-2</number>
-			</slot>
-		</medbay>
-		<clonebay power="1" room="10" start="false">
+		<artillery power="1" room="1" start="true" weapon="ARTILLERY_BOSS_1" img="room_artillery_4" />
+		<battery power="1" room="18" start="false" img="room_battery_14" />
+		<cloaking power="1" room="17" start="false" img="room_cloaking_10" />
+		<clonebay power="1" room="6" start="false">
 			<slot>
 				<number>0</number>
 			</slot>
 		</clonebay>
-		<teleporter power="1" room="5" start="false" />
-		<artillery power="2" room="12" weapon="ARTILLERY_FED" />
-		<cloaking power="1" room="11" start="false" img="room_cloaking_9" />
-		<battery power="1" room="3" start="false" img="room_battery_8" />
-		<mind power="1" room="6" start="false" img="room_mind_7" />
-		<hacking power="1" room="13" start="false" img="room_hacking_2">
+		<doors power="1" room="21" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="2" start="false" img="room_drones" />
+		<engines power="2" room="7" start="true" img="room_engines_2">
 			<slot>
 				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="13" start="false" img="room_hacking_3" />
+		<medbay power="1" room="6" start="true" img="room_medbay_4">
+			<slot>
 				<number>0</number>
 			</slot>
-		</hacking>
+		</medbay>
+		<mind power="1" room="14" start="false" img="room_mind_8" />
+		<oxygen power="1" room="19" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="20" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="8" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="22" start="false" />
+		<weapons power="2" room="9" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
 	</systemList>
-	<weaponSlots>4</weaponSlots>
+	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="4" missiles="9">
+	<weaponList missiles="5" count="3">
 		<weapon name="LASER_BURST_2" />
-		<weapon name="MISSILES_1" />
 	</weaponList>
-	<droneList drones="0" />
+	<droneList drones="0" count="2" />
 	<health amount="30" />
-	<maxPower amount="9" />
+	<maxPower amount="7" />
 	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="energy" />
-	<crewCount amount="1" class="slug" />
-	<shieldImage>fed_cruiser</shieldImage>
-	<cloakImage>fed_cruiser</cloakImage>
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
+</shipBlueprint>
+<shipBlueprint name="PLAYER_SHIP_REBEL_2" layout="rebel_cruiser_2" img="rebel_cruiser_2">
+	<class>Rebel Cruiser</class>
+	<name>Schweizerdolch</name>
+	<unlock id="ship_PLAYER_SHIP_REBEL_2_unlock"/>
+	<desc>The only thing they have to fear is your beam.</desc>
+	<systemList>
+		<artillery power="3" room="6" start="true" weapon="ARTILLERY_BOSS_3" img="room_artillery_4" />
+		<battery power="1" room="19" start="false" img="room_battery_17" />
+		<cloaking power="1" room="15" start="false" img="room_cloaking_2" />
+		<clonebay power="1" room="21" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="13" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="14" start="false" img="room_drones" />
+		<engines power="2" room="20" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="4" start="false" img="room_hacking_2" />
+		<medbay power="1" room="21" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="17" start="false" img="room_mind_9" />
+		<oxygen power="1" room="3" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="1" start="true" img="room_sensors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="11" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="16" start="false" />
+		<weapons power="2" room="12" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="3">
+		<weapon name="ION_HEAVY" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
 </shipBlueprint>
 
 <!-- 
