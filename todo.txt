@@ -10,6 +10,10 @@ Make nebula sectors more interesting.
 
 Special pre-igniter quest.
 
+Alternate Cruisers
+
+Add temporal manipulator
+
 Add ghosts.
 
 /////////////////MINOR/////////////////

@@ -477,6 +477,16 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		</passiveStatBoosts>
 	</race>
 	
+	<race name="leech">
+		<maxHealth>85</maxHealth>
+		<stunMultiplier>1.5</stunMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+		</shootingSounds>
+	</race>
+	
 	<race name="crystal">
 		<maxHealth>125</maxHealth>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>

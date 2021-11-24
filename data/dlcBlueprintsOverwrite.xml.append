@@ -168,7 +168,7 @@
                                                     ENGI 
 **********************************************************************************************************************
 -->
-<blueprintList name="OVERRIDE_WEAPONS_CIRCLE"> 
+<blueprintList name="OVERRIDE_WEAPONS_ENGI"> 
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_2</name>
 	<name>LASER_BURST_3</name>
@@ -187,7 +187,7 @@
 	<name>ION_STUN</name>
 	<name>BOMB_STUN</name>
 </blueprintList>
-<blueprintList name="OVERRIDE_DRONES_CIRCLE">
+<blueprintList name="OVERRIDE_DRONES_ENGI">
 	<name>COMBAT_BEAM</name>	
 	<name>COMBAT_ION</name>	
 	<name>DEFENSE_1</name>
@@ -260,7 +260,7 @@
                                                     SLUGS 
 **********************************************************************************************************************
 -->
-<blueprintList name="OVERRIDE_WEAPONS_JELLY">  
+<blueprintList name="OVERRIDE_WEAPONS_SLUG">  
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_2</name>
 	<name>LASER_BURST_3</name>

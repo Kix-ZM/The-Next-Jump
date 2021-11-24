@@ -232,6 +232,42 @@
 	</colorList>
 </crewBlueprint>
 
+<crewBlueprint name="leech">
+	<desc>Known commonly as the bottom feeders of the galaxy, these downbeaten scavengers make no effort to redeem themselves in the eyes of the galaxy.</desc>
+	<title>Leech</title>
+	<short>Leech</short>
+	<cost>45</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Sabotages systems twice as fast, and burrows underneath doors.</power>
+		<power>85 health, is stunned twice as long.</power>
+	</powerList>
+	<colorList>
+		<layer> <!-- skin -->
+			<color r="65" g="25" b="25" a="0.7"/> <!--white/red-->
+			<color r="120" g="65" b="65" a="0.7"/> <!--red-->
+			<color r="120" g="65" b="100" a="0.7"/> <!--pink-->
+			<color r="105" g="65" b="120" a="0.7"/> <!--purple-->
+			<color r="75" g="65" b="120" a="0.7"/> <!--dark blue-->
+			<color r="75" g="65" b="120" a="0.7"/> <!--brighter blue-->
+			<color r="65" g="95" b="120" a="0.7"/> <!--light blue-->
+			<color r="65" g="120" b="100" a="0.7"/> <!--green-->
+			<color r="95" g="120" b="65" a="0.7"/> <!--yellow/green-->
+			<color r="110" g="110" b="60" a="0.7"/> <!--yellow-->
+			<color r="170" g="130" b="20" a="0.7"/> <!--brighter yellow-->
+			<color r="110" g="90" b="60" a="0.7"/> <!--brown-->
+			<color r="165" g="50" b="30" a="0.7"/> <!--scarlet-->
+		</layer>
+		<layer> <!-- dots -->
+			<color r="170" g="0" b="0" a="1"/> <!--red-->
+			<color r="250" g="85" b="5" a="1"/> <!--orange-->
+			<color r="240" g="170" b="70" a="1"/> <!--light orange-->
+			<color r="50" g="110" b="320" a="1"/> <!--purple-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
 <crewBlueprint name="crystal">
 	<desc>Ancient ancestors of the Rockmen.</desc>
 	<title>Crystal</title>
@@ -1374,7 +1410,7 @@
 	<tip>tip_crew_beam</tip>
 	<title>'Faucon' Beam</title>
 	<short>'Faucon'</short>
-	<desc>This terrifying beam does no physical damage but rips through organic material, dealing heavy damage to crewmembers.</desc>
+	<desc>This terrifying beam does no physical damage but rips through organic material, dealing heavy damage to crewmembers as well as temporarily weakening them, making them move and repair slower as well as be stunned longer.</desc>
 	<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
 	<damage>0</damage>
 	<persDamage>4</persDamage>
@@ -1387,6 +1423,36 @@
 		<g>8</g>
 		<b>200</b>
 	</color>
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier">
+			<boostType>MULT</boostType>
+			<amount>0.33</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+			<boostAnim>bio_poison</boostAnim>
+		</statBoost>
+		<statBoost name="stunMultiplier">
+			<boostType>MULT</boostType>
+			<amount>1.75</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>0.33</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+	</statBoosts>
 	<speed>13</speed>
 	<power>2</power>
 	<cost>50</cost>
@@ -2253,6 +2319,16 @@
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 	<value>0</value>
+</augBlueprint>
+
+<augBlueprint name="CREW_STIMS">
+	<title>Mantis Pheromones</title>
+	<desc>Your crew's movement speed is increased by 25 percent. Mantis crew members gain </desc>
+	<cost>50</cost>
+	<bp>9</bp>
+	<rarity>0</rarity>
+	<value>0.25</value>
+	<stackable>false</stackable>
 </augBlueprint>
 
 <!-- 

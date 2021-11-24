@@ -43,6 +43,17 @@
 	<name>DEFENSE_2_ENEMY</name>
 </blueprintList>
 
+
+<blueprintList name="SHIPS_CIVILIAN">
+	<name>JELLY_BUTTON</name>
+	<name>ROCK_SCOUT</name>
+	<name>ROCK_FIGHT</name>
+	<name>FED_SCOUT</name>
+	<name>FED_BOMBER</name>
+	<name>NJ_ENGI_SCOUT</name>
+	<name>NJ_ENGI_FIGHTER</name>
+</blueprintList>
+
 <!-- 
 **********************************************************************************************************************
                                                     REBELS 
@@ -64,15 +75,93 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_REBEL">
-	<name>REBEL_FAT</name>
-	<name>REBEL_SKINNY</name>
+	<name>NJ_REBEL_RIGGER</name>
+	<name>NJ_REBEL_FIGHTER</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_REBEL_RIGGER" layout="rebel_squat" img="rebel_squat">
+	<class>Rebel Rigger</class>
+	<systemList>
+		<pilot power="1" max="2" room="0"/>
+		<oxygen power="1" max="2" room="2"/>
+		<shields power="2" max="8" room="4"/>
+		<engines power="2" max="4" room="7"/>
+		<weapons power="1" max="6" room="6"/>
+		<drones power="2" max="8" room="1"/>
+		<medbay power="1" max="3" room="3" start="false"/>
+		<doors power="1" max="3" room="5" start="false"/>
+	</systemList>
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<weaponList missiles="10" load="WEAPONS_REBEL"/>
+	<health amount="9"/>
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="5" class="rebel"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>rebel_squat</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_REBEL_FIGHTER" layout="rebel_long" img="rebel_long">
+	<class>Rebel Fighter</class>
+	<systemList>
+		<oxygen power="1" max="2" room="2"/>
+		<pilot power="1" max="3" room="0"/>
+		<shields power="2" max="8" room="6"/>
+		<engines power="2" max="5" room="5"/>
+		<weapons power="2" max="8" room="4"/>  
+		<medbay power="1" max="2" room="3" start="false"/>
+		<teleporter power="1" max="1" room="1" start="false"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_REBEL"/>
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="rebel"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>rebel_long</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="REBEL_TRANSPORT" layout="rebel_squat" img="rebel_squat">
+	<class>Rebel Transport</class>
+	<systemList>
+		<pilot power="1" max="2" room="0"/>
+		<oxygen power="1" max="2" room="2"/>
+		<shields power="2" max="10" room="4"/>
+		<engines power="2" max="4" room="7"/>
+		<weapons power="1" max="6" room="6"/>
+		<drones power="2" max="8" room="1"/>
+		<medbay power="1" max="3" room="3" start="false"/>
+		<doors power="1" max="3" room="5" start="false"/>
+	</systemList>
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<weaponList missiles="10" load="WEAPONS_REBEL"/>
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3"  max="4" class="rebel"/>
+	<cloakImage>rebel_squat</cloakImage>
+</shipBlueprint>
 
 <!--elite-->
 <blueprintList name="SHIPS_REBEL_ELITE">
-	<name>REBEL_SKINNY_ELITE</name>
-	<name>REBEL_SKINNY_ELITE</name>
+	<name>NJ_REBEL_FIGHTER_ELITE</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_REBEL_FIGHTER_ELITE" layout="rebel_long" img="rebel_long_elite">
+	<class>Elite Fighter</class>
+	<systemList>
+		<oxygen power="1" max="2" room="2"/>
+		<pilot power="1" max="3" room="0"/>
+		<shields power="4" max="8" room="6"/>
+		<engines power="3" max="5" room="5"/>
+		<weapons power="4" max="10" room="4"/>  
+		<medbay power="1" max="3" room="3"/> 
+		<teleporter power="1" max="3" room="1" start="false"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_REBEL"/>
+	<health amount="14"/>	
+	<maxPower amount ="13"/>
+	<crewCount amount="3" max="8" class="rebel"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>rebel_long</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
@@ -101,15 +190,46 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_AUTO">
-	<name>AUTO_BASIC</name>
-	<name>AUTO_ASSAULT</name>
+	<name>NJ_AUTO_SCOUT</name>
+	<name>NJ_AUTO_ASSAULT</name>
 </blueprintList>
 <blueprintList name="SHPS_REBEL_AND_AUTO">
-	<name>AUTO_BASIC</name>
-	<name>AUTO_ASSAULT</name>
-	<name>REBEL_FAT</name>
-	<name>REBEL_SKINNY</name>
+	<name>NJ_AUTO_SCOUT</name>
+	<name>NJ_AUTO_ASSAULT</name>
+	<name>NJ_REBEL_RIGGER</name>
+	<name>NJ_REBEL_FIGHTER</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_AUTO_SCOUT" layout="auto_basic" img="auto_basic">
+	<class>Auto-Scout</class>
+	<systemList>
+		<pilot power="1" max="2" room="2"/>
+		<shields power="2" max="8" room="3" start="false"/>
+		<engines power="2" max="8" room="1"/>
+		<weapons power="2" max="8" room="4"/>
+		<cloaking power="1" max="3" room="0" start="false"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_AUTO"/>
+	<health amount="6"/>	
+	<maxPower amount ="6"/>
+	<cloakImage>auto_basic</cloakImage>
+</shipBlueprint>	
+
+<shipBlueprint name="NJ_AUTO_ASSAULT" layout="auto_assault" img="auto_assault">
+	<class>Auto-Assault</class>
+	<systemList>
+		<pilot power="1" max="3" room="2"/>
+		<shields power="2" max="9" room="3"/>
+		<engines power="1" max="5" room="4"/>
+		<weapons power="0" max="6" room="1"/>
+		<drones power="2" room="0" max="6" start="true"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_AUTO"/>
+	<droneList drones="5" load="DRONES_COMBAT"/>
+	<health amount="8"/>	
+	<maxPower amount ="7"/>
+	<cloakImage>auto_assault</cloakImage>
+</shipBlueprint>	
 
 <!-- 
 **********************************************************************************************************************
@@ -133,9 +253,47 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_FED">
-	<name>FED_SCOUT</name>
-	<name>FED_BOMBER</name>
+	<name>NJ_FED_SCOUT</name>
+	<name>NJ_FED_BOMBER</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_FED_SCOUT" layout="fed_scout" img="fed_scout">
+	<class>Federation Scout</class>
+	<maxSector>6</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="4"/>
+		<weapons power="2" max="8" room="3"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_FED"/>
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "2" max="3" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>fed_scout</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_FED_BOMBER" layout="fed_bomber" img="fed_bomber">
+	<class>Federation Bomber</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="8" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="9"/> 
+		<weapons power="2" max="8" room="6"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_FED"/>
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="6" class="human"/>
+	<cloakImage>fed_bomber</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
@@ -165,17 +323,75 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_ZOLTAN">
-	<name>ZOLTAN_FIGHTER</name>
-	<name>ZOLTAN_BOMBER</name>
+	<name>NJ_ZOLTAN_FIGHTER</name>
+	<name>NJ_ZOLTAN_BOMBER</name>
 </blueprintList>
 
+<shipBlueprint name="NJ_ZOLTAN_FIGHTER" layout="energy_fighter" img="energy_fighter">
+	<class>Energy Fighter</class>
+	<systemList>
+		<pilot power="1" max="3" room="5"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="6" start="false"/>
+		<oxygen power="1" max="3" room="3"/> 
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="0"/>
+		<weapons power="2" max="8" room="4"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_ZOLTAN"/>
+	<health amount="7"/>
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="energy"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>energy_fighter</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_ZOLTAN_BOMBER" layout="energy_bomber" img="energy_bomber">
+	<class>Energy Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="1"/> 
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="6" start="false"/>
+		<oxygen power="1" max="3" room="5"/> 
+		<shields power="2" max="8" room="3"/> 
+		<engines power="1" max="5" room="7"/>
+		<weapons power="2" max="8" room="4"/>
+		<drones power="2" max="4" room="0" start="false"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_ZOLTAN"/>
+	<droneList drones="2" load="DRONES_COMBAT"/>
+	<health amount="7"/>	
+	<aug name="ENERGY_SHIELD"/>
+	<maxPower amount ="9"/>
+	<crewCount amount = "3" max="6" class="energy"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>energy_bomber</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="ZOLTAN_PEACE" layout="energy_fighter" img="energy_fighter">
+	<class>Monk Convoy</class>
+	<systemList>
+		<pilot power="1" max="3" room="5"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="6" start="false"/>
+		<oxygen power="1" max="3" room="3"/> 
+		<engines power="1" max="5" room="0"/>
+	</systemList>
+	<health amount="7"/>
+	<maxPower amount ="12"/>
+	<crewCount amount = "2" max="3" class="energy"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>energy_fighter</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
                                                     ENGI 
 **********************************************************************************************************************
 -->
-<blueprintList name="WEAPONS_CIRCLE">
+<blueprintList name="WEAPONS_ENGI">
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_2</name>
 	<name>LASER_BURST_3</name>
@@ -189,7 +405,7 @@
 	<name>ION_2</name>
 	<name>ION_HEAVY</name>
 </blueprintList>
-<blueprintList name="DRONES_CIRCLE">
+<blueprintList name="DRONES_ENGI">
 	<name>COMBAT_BEAM</name>
 	<name>COMBAT_ION</name>
 	<name>DEFENSE_1</name>
@@ -198,10 +414,56 @@
 	<name>BATTLE</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_CIRCLE">
-	<name>CIRCLE_SCOUT</name>
-	<name>CIRCLE_BOMBER</name>
+<blueprintList name="SHIPS_ENGI">
+	<name>NJ_ENGI_SCOUT</name>
+	<name>NJ_ENGI_BOMBER</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_ENGI_SCOUT" layout="circle_scout" img="circle_scout">
+	<class>Engi Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="5"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="6" start="false"/>
+		<oxygen power="1" max="3" room="3"/> 
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="7"/>
+		<weapons power="2" max="8" room="4"/>
+		<drones power="2" max="8" room="0"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ENGI"/>
+	<droneList drones="4" load="DRONES_ENGI"/>
+	<health amount="7"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "2" max="5" class="engi"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NANO_MEDBAY"/>
+	<cloakImage>circle_scout</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_ENGI_BOMBER" layout="circle_bomber" img="circle_bomber">
+	<class>Engi Bomber</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="1"/> 
+		<doors power="1" max="3" room="2" start="false"/>
+		<medbay power="1" max="3" room="4" start="false"/> 
+		<oxygen power="1" max="3" room="3"/>
+		<shields power="2" max="10" room="7"/> 
+		<engines power="1" max="5" room="9"/>
+		<weapons power="2" max="10" room="11"/>
+		<drones power="2" max="8" room="5"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_ENGI"/>
+	<droneList drones="4" load="DRONES_ENGI"/>
+	<health amount="9"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "3" max="6" class="engi"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NANO_MEDBAY"/>
+	<cloakImage>circle_bomber</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
@@ -226,10 +488,75 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_ROCK">
-	<name>ROCK_SCOUT</name>
-	<name>ROCK_FIGHT</name>
-	<name>ROCK_ASSAULT</name>
+	<name>NJ_ROCK_SCOUT</name>
+	<name>NJ_ROCK_FIGHT</name>
+	<name>NJ_ROCK_ASSAULT</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_ROCK_SCOUT" layout="rock_scout" img="rock_scout">
+	<class>Rock Scout</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>
+		<doors power="1" max="3" room="5" start="false"/>
+		<oxygen power="1" max="3" room="0"/>
+		<medbay power="1" max="3" room="2" start="false"/>
+		<shields power="2" max="8" room="4"/>
+		<engines power="1" max="5" room="6"/>
+		<weapons power="2" max="8" room="1"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_ROCK"/>
+	<health amount="8"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "2" max="5" class="rock"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+	<cloakImage>rock_scout</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_ROCK_FIGHT" layout="rock_fight" img="rock_fight">
+	<class>Rock Fighter</class>
+	<minSector>2</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>
+		<doors power="1" max="3" room="6" start="false"/>
+		<oxygen power="1" max="3" room="7"/>
+		<medbay power="1" max="3" room="4" start="false"/>
+		<shields power="2" max="8" room="5"/>
+		<engines power="2" max="5" room="8"/>
+		<weapons power="2" max="8" room="0"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_ROCK"/>
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="5" class="rock"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+	<cloakImage>rock_fight</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_ROCK_ASSAULT" layout="rock_assault" img="rock_assault">
+	<class>Rock Assault</class>
+	<minSector>5</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="3" start="false"/>
+		<oxygen power="1" max="3" room="9"/>
+		<medbay power="1" max="2" room="1" start="false"/>
+		<shields power="2" max="8" room="6"/>
+		<engines power="2" max="5" room="7"/>
+		<weapons power="2" max="8" room="5"/>
+		<cloaking power="1" max="1" room="4" start="false"/>
+		<teleporter power="1" max="2" room="8" start="false"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_ROCK"/>
+	<health amount="12"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="rock"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR"/>
+	<cloakImage>rock_assault</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
@@ -253,17 +580,80 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_MANTIS">
-	<name>MANTIS_SCOUT</name>
-	<name>MANTIS_FIGHTER</name>
-	<name>MANTIS_BOMBER</name>
+	<name>NJ_MANTIS_SCOUT</name>
+	<name>NJ_MANTIS_FIGHTER</name>
+	<name>NJ_MANTIS_BOMBER</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_MANTIS_SCOUT" layout="mantis_scout" img="mantis_scout">
+	<class>Mantis Scout</class>
+	<maxSector>5</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="1"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<medbay power="1" max="3" room="6" start="false"/>
+		<teleporter power="1" max="3" room="4" start="false"/>
+		<shields power="2" max="8" room="0"/>
+		<engines power="1" max="5" room="7"/>
+		<weapons power="2" max="7" room="3"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_MANTIS"/>
+	<health amount="7"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "3" max="5" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>mantis_scout</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_MANTIS_FIGHTER" layout="mantis_fighter" img="mantis_fighter">
+	<class>Mantis Fighter</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="9"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<oxygen power="1" max="3" room="5"/>
+		<medbay power="1" max="3" room="8"/>
+		<teleporter power="1" max="3" room="4"/>
+		<shields power="2" max="8" room="0"/>
+		<engines power="1" max="5" room="7"/>
+		<weapons power="1" max="8" room="3"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_MANTIS"/>
+	<health amount="9"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "3" max="5" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>mantis_fighter</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_MANTIS_BOMBER" layout="mantis_bomber" img="mantis_bomber">
+	<class>Mantis Bomber</class>
+	<minSector>4</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>
+		<doors power="1" max="3" room="9" start="false"/>
+		<oxygen power="1" max="3" room="11"/> 
+		<medbay power="1" max="3" room="8" start="false"/>
+		<teleporter power="1" max="3" room="4"/>
+		<shields power="2" max="10" room="0"/>
+		<engines power="1" max="5" room="7"/>
+		<weapons power="2" max="10" room="10"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_MANTIS"/>
+	<health amount="11"/>	
+	<maxPower amount ="11"/>
+	<crewCount amount = "4" max="6" class="mantis"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>mantis_bomber</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
                                                     SLUGS 
 **********************************************************************************************************************
 -->
-<blueprintList name="WEAPONS_JELLY">
+<blueprintList name="WEAPONS_SLUG">
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_2</name>
 	<name>LASER_BURST_3</name>
@@ -283,11 +673,73 @@
 	<name>ION_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_JELLY">
-	<name>JELLY_BUTTON</name>
-	<name>JELLY_CROISSANT</name>
-	<name>JELLY_TRUFFLE</name>
+<blueprintList name="SHIPS_SLUG">
+	<name>NJ_SLUG_SCOUT</name>
+	<name>NJ_SLUG_BOMBER</name>
+	<name>NJ_SLUG_ASSAULT</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_SLUG_SCOUT" layout="jelly_button" img="jelly_button">
+	<class>Slug Scout</class>
+	<maxSector>4</maxSector>
+	<systemList>
+		<oxygen power="1" max="3" room="3"/>
+		<pilot power="1" max="3" room="0"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="8"  room="4"/>
+		<weapons power="2" max="8"  room="2"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_SLUG"/>
+	<health amount="9"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "2" max="3" class="slug"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_button</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_SLUG_BOMBER" layout="jelly_croissant" img="jelly_croissant">
+	<class>Slug Bomber</class>
+	<minSector>1</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="5" start="false"/>
+		<oxygen power="1" max="3" room="4"/>
+		<medbay power="1" max="3" room="6" start="false"/>
+		<shields power="2" max="10" room="3"/>
+		<engines power="1" max="6" room="7"/>
+		<weapons power="2" max="8" room="1"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_SLUG"/>
+	<health amount="10"/>	
+	<maxPower amount ="7"/>
+	<crewCount amount = "3" max="6" class="slug"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_croissant</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_SLUG_ASSAULT" layout="jelly_truffle" img="jelly_truffle">
+	<class>Slug Assault</class>
+	<minSector>4</minSector>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="1" start="false"/>
+		<oxygen power="1" max="3" room="4"/>
+		<medbay power="1" max="3" room="3" start="false"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="2"/>
+		<weapons power="2" max="10" room="5"/>
+		<cloaking power="1" max="1" room="7" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_SLUG"/>
+	<health amount="11"/>	
+	<maxPower amount ="10"/>
+	<crewCount amount = "4" max="7" class="slug"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
 
 <!-- 
 **********************************************************************************************************************
@@ -303,8 +755,45 @@
 </blueprintList>
 
 <blueprintList name="SHIPS_CRYSTAL">
-	<name>CRYSTAL_SCOUT</name>
-	<name>CRYSTAL_BOMBER</name>
+	<name>NJ_CRYSTAL_SCOUT</name>
+	<name>NJ_CRYSTAL_BOMBER</name>
 </blueprintList>
+
+<shipBlueprint name="NJ_CRYSTAL_SCOUT" layout="crystal_scout" img="crystal_scout">
+	<class>Crystal Scout</class>
+	<systemList>
+		<pilot power="1" max="3" room="3"/>
+		<medbay power="1" max="3" room="5" start="false"/>
+		<oxygen power="1" max="3" room="0"/>
+		<shields power="2" max="8" room="1"/>
+		<engines power="1" max="5" room="4"/>
+		<weapons power="4" max="8" room="2"/> 
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_CRYSTAL"/>
+	<health amount="7"/>	
+	<maxPower amount ="9"/>
+	<crewCount amount = "2" max="3" class="crystal"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>crystal_scout</cloakImage>
+</shipBlueprint>
+
+<shipBlueprint name="NJ_CRYSTAL_BOMBER" layout="crystal_bomber" img="crystal_bomber">
+	<class>Crystal Bomber</class>
+	<systemList>
+		<pilot power="1" max="3" room="2"/> 
+		<doors power="1" max="3" room="8" start="false"/>
+		<medbay power="1" max="3" room="0" start="false"/> 
+		<oxygen power="1" max="3" room="6"/> 
+		<shields power="2" max="10" room="4"/>  
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="7"/>
+	</systemList>
+	<weaponList missiles="10" load="WEAPONS_CRYSTAL"/>
+	<health amount="9"/>	
+	<maxPower amount ="9"/>
+	<crewCount amount = "2" max="5" class="crystal"/>
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>crystal_bomber</cloakImage>
+</shipBlueprint>
 
 </FTL>
