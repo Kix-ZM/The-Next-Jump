@@ -8,6 +8,8 @@ Replace Fed Cruiser with Rebel Cruiser.
 
 Make nebula sectors more interesting.
 
+Special pre-igniter quest.
+
 Add ghosts.
 
 /////////////////MINOR/////////////////
@@ -21,6 +23,8 @@ Improved miniships
 Give civilian sectors a new start beacon
 
 Modify ship unlocks.
+
+Fix flagship cloak for new artilleries
 
 /////////////////COMPLETE/////////////////
 

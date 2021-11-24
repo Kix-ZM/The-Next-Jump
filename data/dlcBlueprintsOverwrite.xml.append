@@ -727,68 +727,79 @@
 	<floorImage>jelly_cruiser</floorImage>
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_REBEL_3" layout="fed_cruiser_3" img="fed_cruiser_3">
-	<class>Federation Cruiser</class>
-	<name>The Fregatidae</name>
+<shipBlueprint name="PLAYER_SHIP_REBEL_3" layout="rebel_cruiser_3" img="rebel_cruiser_3">
+	<class>Rebel Cruiser</class>
+	<name>Dornberger</name>
 	<unlock id="ship_PLAYER_SHIP_REBEL_3_unlock"/>
-	<desc>With a Flak Artillery weapon and an improved Clonebay, only the most suicidal of infantry chooses to fly on this ship.</desc>
+	<desc>Hijacked by pirates and outfitted with a stolen missile artillery, this ship is designed only for crews willing to take a risk.</desc>
 	<systemList>
-		<pilot power="1" room="6" start="true"/>  
-		<doors power="1" room="13" start="true" img="room_doors">
+		<artillery power="2" room="13" start="true" weapon="ARTILLERY_BOSS_2" img="room_artillery_4" />
+		<battery power="1" room="2" start="false" img="room_battery_14" />
+		<cloaking power="1" room="20" start="false" img="room_cloaking_8" />
+		<clonebay power="1" room="6" start="true">
 			<slot>
-				<direction>up</direction>
-				<number>1</number> 
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="15" start="true" img="room_doors_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
 			</slot>
 		</doors>
-		<sensors power="1" room="10" start="true">
+		<drones power="2" room="10" start="false" img="room_drones_4" />
+		<engines power="2" room="3" start="true" img="room_engines_2">
 			<slot>
 				<direction>down</direction>
-				<number>1</number> 
+				<number>2</number>
 			</slot>
-		</sensors>     
-		<oxygen power="1" room="12" start="true" img="room_oxygen_2"/>
-		<engines power="2" room="5" start="true" img="room_engines_8">
+		</engines>
+		<hacking power="1" room="11" start="false" img="room_hacking_2" />
+		<medbay power="1" room="6" start="false" img="room_medbay_4">
 			<slot>
-				<direction>left</direction>
-				<number>1</number> 
+				<number>0</number>
 			</slot>
-		</engines>     
-		<shields power="2" room="15" start="true"/>
-		<weapons power="1" room="11" start="true" img="room_weapons">
+		</medbay>
+		<mind power="1" room="17" start="false" img="room_mind_5" />
+		<oxygen power="1" room="1" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="14" start="true" img="room_sensors_2">
 			<slot>
 				<direction>up</direction>
-				<number>1</number> 
+				<number>0</number>
 			</slot>
-		</weapons>     
-		<drones power="2" room="17" start="false" img="room_drones_3"/> <!-- F-->
-		<medbay power="1" room="1" start="false"/>  <!-- F-->
-		<clonebay power="2" room="1" start="true"/>  
-		<teleporter power="1" room="8" start="true"/>  
-		<artillery power="1" room="9" weapon="ARTILLERY_FED_C"/>
-		<cloaking power="1" room="4" start="false" img="room_cloaking_3"/>   <!-- F-->
-		<battery power="1" room="7" start="false" img="room_battery_16"/>  <!-- F-->
-		<mind power="1" room="16" start="false" img="room_mind_3"/> <!-- F-->
-		<hacking power="1" room="2" start="false" img="room_hacking_9"> <!--F-->
+		</sensors>
+		<shields power="2" room="7" start="true" img="room_shields_7">
 			<slot>
-				<direction>left</direction>
-				<number>0</number> 
+				<direction>up</direction>
+				<number>1</number>
 			</slot>
-		</hacking> 
+		</shields>
+		<teleporter power="1" room="8" start="true" />
+		<weapons power="2" room="9" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
 	</systemList>
-	<weaponSlots>4</weaponSlots>
+	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList count="0" missiles="5">
-	</weaponList>
-	<droneList drones="0"/>
-	<health amount="30"/>
-	<maxPower amount ="7"/> 
-	<crewCount amount = "1" class="human"/>
-	<crewCount amount = "2" class="energy"/>
-	<crewCount amount = "1" class="mantis"/>
-	<aug name="O2_MASKS"/>
-	<shieldImage>fed_cruiser</shieldImage>
-	<cloakImage>fed_cruiser</cloakImage>
-	<floorImage>fed_cruiser</floorImage>
+	<weaponList missiles="5" count="3"/>
+	<droneList drones="3" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="rock" />
+	<crewCount amount="1" class="energy" />
+	<crewCount amount="1" class="mantis" />
+	<aug name="FTL_JAMMER" />
+	<shieldImage>rebel_cruiser</shieldImage>
+	<cloakImage>rebel_cruiser</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_CLOAK_3" layout="stealth_3" img="stealth_3">

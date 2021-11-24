@@ -12,6 +12,8 @@ Hyperspace QoL features like hull number indicators and extended information are
 
 The lights/windows on Zoltan ships now glow.
 
+Artillery now shows the exact cooldown modifier in the description.
+
 /////////////////GAMEPLAY/////////////////
 
 Boarding drones are now recovered at the end of combat if they have not been destroyed.
@@ -60,6 +62,8 @@ Heavy Crystal 1 charges 1 second quicker.
 
 Heavy Crystal 2 charges 2 seconds quicker. Reduced power by 1.
 
+Modified the flagship artilleries slightly (mostly status effect chances and cooldown).
+
 Renamed various weapons.
 
 Modified many projectile images.
@@ -77,6 +81,18 @@ Combat Beam Mk 2 is no longer AE exclusive.
 /////////////////AUGMENTS/////////////////
 
 Medbots now scale with medbay power.
+
+Pre-Igniter can no longer be found in stores/events.
+
+Added the following augments: Safety Blankets (AE only)
+
+Ion field now provides a 50% stun duration reduction in the shield room.
+
+Increased shield charge booster effect by 10%.
+
+Increased FTL Recharge Booster's effect by 40%. Decreased price by 5 scrap.
+
+Adv. Nav now allows you to visit unexplored beacons anywhere on the map.
 
 /////////////////ENEMIES/////////////////
 

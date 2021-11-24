@@ -45,6 +45,10 @@
 	<name>LIFE_SCANNER</name>
 	<name>ZOLTAN_BYPASS</name>
 	<name>HACKING_STUN</name>
+	
+	<!--new-->
+	<name>MANNING</name>
+	<name>SAFETY_BLANKETS</name>
 </blueprintList>
 
 <blueprintList name="DLC_WEAPONS">
@@ -808,6 +812,142 @@
 	<rarity>1</rarity>
 	<iconImage>repair</iconImage>
 </droneBlueprint>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
+												   AUGMENTS
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                                    SHOP
+**********************************************************************************************************************
+-->
+
+<!--NEW-->
+<augBlueprint name="SAFETY_BLANKETS"> 
+	<title>Safety Blankets</title>
+	<desc>Crew take 75% less damage from fire and asphyxiation and are immune to stun while in the medbay. Medbay does not need to be powered.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<!--VANILLA-->
+<augBlueprint name="O2_MASKS"> 
+	<title>Emergency Respirators</title>
+	<desc>Crew take half damage from low oxygen.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>2</rarity>
+	<stackable>false</stackable>
+	<value>0.5</value>
+</augBlueprint>
+
+<augBlueprint name="EXPLOSIVE_REPLICATOR"> 
+	<title>Explosive Replicator</title>
+	<desc>Missile based weapons have a 50 percent chance of not using a missile.</desc>
+	<cost>60</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>0.5</value>
+</augBlueprint>
+
+<augBlueprint name="FIRE_EXTINGUISHERS"> 
+	<title>Fire Suppression</title>
+	<desc>Automatically put out fires throughout the ship.</desc>
+	<cost>65</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>1.f</value>
+</augBlueprint>
+
+<augBlueprint name="FLEET_DISTRACTION">
+	<title>Distraction Buoys</title>
+	<desc>Leaves a false signal at sector start to delay Rebels 1 jump.</desc>
+	<cost>55</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>1.f</value>
+</augBlueprint>
+
+<augBlueprint name="TELEPORT_HEAL">
+	<title>Reconstructive Teleport</title>
+	<desc>Crew gets fully healed by teleportation.</desc>
+	<cost>70</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>1.f</value>
+</augBlueprint>
+
+<augBlueprint name="BATTERY_BOOSTER"> 
+	<title>Battery Charger</title>
+	<desc>Backup Battery's lock time is halved.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>2</rarity>
+	<stackable>false</stackable>
+	<value>0.5</value>
+</augBlueprint>
+
+<augBlueprint name="DEFENSE_SCRAMBLER"> 
+	<title>Defense Scrambler</title>
+	<desc>Prevents enemy defense drones from targeting anything.</desc>
+	<cost>80</cost>
+	<bp>8</bp>
+	<rarity>4</rarity>
+	<stackable>false</stackable>
+	<value>0.0</value>
+</augBlueprint>
+
+<augBlueprint name="BACKUP_DNA"> 
+	<title>Backup DNA Bank</title>
+	<desc>Your crew is safe in clone storage even if the system is off or broken.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>2</rarity>
+	<stackable>false</stackable>
+	<value>0.0</value>
+</augBlueprint>
+
+<augBlueprint name="HACKING_STUN">
+	<title>Hacking Stun</title>
+	<desc>All crew inside a room during a Hacking Pulse will be stunned for the duration.</desc>
+	<cost>60</cost>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>0.0</value>
+</augBlueprint>
+
+<augBlueprint name="LIFE_SCANNER"> 
+	<title>Lifeform Scanner</title>
+	<desc>Detects the location of any life forms, even when sensors don't function.</desc>
+	<cost>40</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>0.0</value>
+</augBlueprint>
+
+<augBlueprint name="ZOLTAN_BYPASS"> 
+	<title>Zoltan Shield Bypass</title>
+	<desc>Allows crew/bomb teleportation and mind control to work through Super Shields.</desc>
+	<cost>55</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>0.0</value>
+</augBlueprint>
 
 <!-- 
 ********************************************************************************************************************************************************************************************************************************************

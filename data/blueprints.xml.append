@@ -1705,6 +1705,110 @@
 	<weaponArt>boss_1</weaponArt>
 </weaponBlueprint>
 
+<weaponBlueprint name="ARTILLERY_BOSS_2">
+	<type>MISSILES</type>
+	<title>Missile Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: A deadly burst of missiles that take no ammunition and have a heavy breach chance.
+	Base Cooldown: 23</desc>
+	<tooltip>Artillery: A deadly burst of missiles that take no ammunition and have a heavy breach chance.</tooltip>
+	<damage>1</damage>
+	<missiles>0</missiles>
+	<shots>3</shots>
+	<sp>5</sp>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>23</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>missile_burst_1</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>boss_2</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARTILLERY_BOSS_3">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Beam Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: A long but slow charging 2 damage beam with burning hot intensity.
+	Base Cooldown: 26</desc>
+	<tooltip>Artillery: A long but slow charging 2 damage beam with burning hot intensity.</tooltip>
+	<damage>2</damage>
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>26</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<length>100</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>boss_3</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARTILLERY_BOSS_4">
+	<type>LASER</type>
+	<title>Ion Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: A barrage of three ion projectiles that also have a decent chance to stun crew.
+	Base Cooldown: 22</desc>
+	<tooltip>Artillery: A barrage of three ion projectiles that also have a decent chance to stun crew.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>40</speed>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>5</stunChance>
+	<cooldown>22</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>ion_barrage</image>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>boss_4</weaponArt>
+</weaponBlueprint>
+
 <!-- 
 ********************************************************************************************************************************************************************************************************************************************
 ********************************************************************************************************************************************************************************************************************************************                                               
@@ -1830,6 +1934,7 @@
 	<rarity>1</rarity>
 	<iconImage>repair</iconImage>
 </droneBlueprint>
+
 <!-- 
 ********************************************************************************************************************************************************************************************************************************************
 ********************************************************************************************************************************************************************************************************************************************                                               
@@ -1845,13 +1950,157 @@
 **********************************************************************************************************************
 -->
 <augBlueprint name="NANO_MEDBAY">
-	<title>Engi Med-bot Dispersal</title>
+	<title>Med-bot Dispersal</title>
 	<desc>Engi nano med-bots heal the crew outside of the med-bay (at a reduced speed). Healing scales with medbay power.</desc>
 	<cost>60</cost>
 	<bp>12</bp>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 	<value>0</value>
+</augBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                                    SPECIAL
+**********************************************************************************************************************
+-->
+<augBlueprint name="WEAPON_PREIGNITE">
+	<title>Weapon Pre-igniter</title>
+	<desc>Weapons are made immediately available after an FTL jump.</desc>
+	<cost>120</cost>
+	<bp>16</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="STASIS_POD">
+	<title>Damaged Stasis Pod</title>
+	<desc>This bizarre alien artifact appears to be barely operational. It has no practical function but perhaps someone can repair it.</desc>
+	<cost>30</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                                    SHOP
+**********************************************************************************************************************
+-->
+
+<!--REMOVED-->
+<augBlueprint name="FTL_JUMPER"> <!--replaced with the hs version-->
+	<title>Adv. FTL Navigation</title>
+	<desc>Allows the ship to jump to any previously visited Beacon.</desc>
+	<cost>50</cost>
+	<bp>5</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<!--VANILLA-->
+<augBlueprint name="ION_ARMOR">
+	<title>Reverse Ion Field</title>
+	<desc>Protects your ship from ion damage, giving a 50 percent chance to negate it entirely. Also reduces stun duration in the shield room by 50%.</desc>
+	<cost>45</cost>
+	<bp>8</bp>
+	<rarity>2</rarity>
+	<stackable>true</stackable>
+	<value>0.50</value>
+</augBlueprint>
+<augBlueprint name="CLOAK_FIRE">
+	<title>Stealth Weapons</title>
+	<desc>Prevents your weapon fire from disrupting your cloak, allowing you to shoot at will while cloaked.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>0.15</value>
+</augBlueprint>
+<augBlueprint name="ADV_SCANNERS">
+	<title>Long-Ranged Scanners</title>
+	<desc>Adds additional info about nearby Beacons on the star map.</desc>
+	<cost>30</cost>
+	<bp>3</bp>
+	<rarity>1</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="AUTO_COOLDOWN">
+	<title>Automated Re-loader</title>
+	<desc>Cooldown between weapon shots is improved by 10 percent.</desc>
+	<cost>40</cost>
+	<bp>5</bp>
+	<rarity>2</rarity>
+	<stackable>true</stackable>
+	<value>0.10</value>
+</augBlueprint>
+<augBlueprint name="SHIELD_RECHARGE">
+	<title>Shield Charge Booster</title>
+	<desc>Boosts the ship's shield recharge rate by 25 percent.</desc>
+	<cost>45</cost>
+	<bp>5</bp>
+	<rarity>2</rarity>
+	<stackable>true</stackable>
+	<value>0.25</value>
+</augBlueprint>
+<augBlueprint name="FTL_BOOSTER">
+	<title>FTL Recharge Booster</title>
+	<desc>The ship's FTL Drive powers up 65 percent faster.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>2</rarity>
+	<stackable>true</stackable>
+	<value>0.65</value>
+</augBlueprint>
+<augBlueprint name="FTL_JUMPER_GOOD">
+    <title>Adv. FTL Navigation</title>
+	<desc>Allows you to jump to any beacon in a sector. Non-adjacent beacons take a flat sum of 3 fuel.</desc>
+    <cost>60</cost>
+    <bp>4</bp>
+    <rarity>5</rarity>
+    <value>3</value>
+    <stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="FTL_JAMMER">
+	<title>FTL Jammer</title>
+	<desc>Scramble enemy ships' FTL computers, doubling the time it takes for them to jump.</desc>
+	<cost>30</cost>
+	<bp>4</bp>
+	<rarity>3</rarity>
+	<value>2</value>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                                    ARMS
+**********************************************************************************************************************
+-->
+<augBlueprint name="REPAIR_ARM">
+	<title>Repair Arm</title>
+	<desc>Repairs your hull every time you collect scrap, but reduces scrap collected by 15 percent.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>3</rarity>
+	<stackable>false</stackable>
+	<value>0.15</value>
+</augBlueprint>
+<augBlueprint name="SCRAP_COLLECTOR">
+	<title>Scrap Recovery Arm</title>
+	<desc>Allows the ship to collect 10 percent more scrap from any source.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>1</rarity>
+	<stackable>true</stackable>
+	<value>0.10</value>
+</augBlueprint>
+<augBlueprint name="DRONE_RECOVERY">
+	<title>Drone Recovery Arm</title>
+	<desc>Non-destroyed drones will be retrieved when jumping, allowing their parts to be reused.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>2</rarity>
+	<stackable>false</stackable>
 </augBlueprint>
 
 <!-- 
@@ -2137,6 +2386,8 @@
 	<crewCount amount="1" class="energy" />
 	<crewCount amount="1" class="engi" />
 	<aug name="NANO_MEDBAY" />
+	<shieldImage>circle_cruiser</shieldImage>
+	<cloakImage>circle_cruiser</cloakImage>
 </shipBlueprint>
 
 <!-- 

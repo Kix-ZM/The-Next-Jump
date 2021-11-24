@@ -1,4 +1,10 @@
 <FTL>
+<text name="artillery_1">Cooldown 1.25x‡</text>
+<text name="artillery_2">Cooldown 1x‡</text>
+<text name="artillery_3">Cooldown 0.75x‡</text>
+<text name="artillery_4">Cooldown 0.5x‡</text>
+<text name="artillery_5">Cooldown 0.25x‡</text>
+
 <text name="no_time_sector">Upon examining your map, you realize you just won't have time and need to get to the next sector! You leave the quest for another day.</text>
 
 <text name="no_type_c">Hangar Empty</text>

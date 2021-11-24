@@ -40,6 +40,25 @@
     	<function name="BOARDER_RECOVERY" value="1" useForReqs="true"/>
 		<function name="MIND_ORDER" value="1" useForReqs="true"/>
     </aug>
+	<aug name="FTL_JUMPER_GOOD">
+    	<function name="FTL_JUMPER" value="1" warning="false" useForReqs="true"/>
+    </aug>
+	<aug name="ION_ARMOR">
+		<statBoosts>
+			<statBoost name="stunMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>0.5</amount>
+				<priority>999</priority>
+				<systemRoomTarget>ALL</systemRoomTarget>
+				<systemList>
+				  <shields/>
+				</systemList>
+			</statBoost>
+		</statBoosts>
+    </aug>
 	<aug name="NANO_MEDBAY">
 		<statBoosts>
 			<statBoost name="healAmount">
@@ -60,6 +79,46 @@
 					<threePwr>3</threePwr>
 				</systemPowerScaling>
 				<systemRoomTarget>NONE</systemRoomTarget>
+				<systemList>
+				  <medbay/>
+				</systemList>
+			</statBoost>
+		</statBoosts>
+    </aug>
+	<aug name="SAFETY_BLANKETS">
+		<statBoosts>
+			<statBoost name="fireDamageMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>0.25</amount>
+				<priority>999</priority>
+				<systemRoomTarget>ALL</systemRoomTarget>
+				<systemList>
+				  <medbay/>
+				</systemList>
+			</statBoost>
+			<statBoost name="canSuffocate">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>0.25</amount>
+				<priority>999</priority>
+				<systemRoomTarget>ALL</systemRoomTarget>
+				<systemList>
+				  <medbay/>
+				</systemList>
+			</statBoost>
+			<statBoost name="stunMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>0</amount>
+				<priority>999</priority>
+				<systemRoomTarget>ALL</systemRoomTarget>
 				<systemList>
 				  <medbay/>
 				</systemList>
@@ -310,6 +369,142 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 </ships>
 
 <crew>
+	<race name="human">
+		<skills>
+			<piloting req="13"/>
+			<engines req="13"/>
+			<shields req="50"/>
+			<weapons req="58"/>
+			<repair req="16"/>
+			<combat req="7"/>
+		</skills>
+	</race>
+	
+	<race name="engi">
+		<repairSpeed>2.0</repairSpeed>
+		<damageMultiplier>0.5</damageMultiplier>
+		
+		<deathSounds>
+			<deathSound>engiDeath</deathSound>
+		</deathSounds>
+	</race>
+	
+	<race name="mantis">
+		<repairSpeed>0.5</repairSpeed>
+		<damageMultiplier>1.5</damageMultiplier>
+		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+		<animBase>mantis</animBase>
+		
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+	</race>
+	
+	<race name="rock">
+		<maxHealth>150</maxHealth>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<fireRepairMultiplier>2.0</fireRepairMultiplier>
+		<canBurn>false</canBurn>
+		<animBase>rock</animBase>
+		
+		<repairSounds animSoundFrame="5">
+			<repairSound>rockThud1</repairSound>
+			<repairSound>rockThud2</repairSound>
+			<repairSound>rockThud3</repairSound>
+		</repairSounds>
+		
+		<deathSounds>
+			<deathSound>rockDeath</deathSound>
+		</deathSounds>
+		
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+	</race>
+	
+	<race name="energy">
+		<bonusPower>1</bonusPower>
+		<maxHealth>70</maxHealth>
+		
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		
+		<deathEffect>
+			<persDamage>1</persDamage>
+			<friendlyFire>false</friendlyFire>
+		</deathEffect>
+		
+		<deathSounds>
+			<deathSound>energyDeath</deathSound>
+		</deathSounds>
+	</race>
+	
+	<race name="slug">
+		<isTelepathic>true</isTelepathic>
+		<resistsMindControl>true</resistsMindControl>
+		<detectsLifeforms>true</detectsLifeforms>
+	</race>
+	
+	<race name="crystal">
+		<maxHealth>125</maxHealth>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<fireRepairMultiplier>1.0</fireRepairMultiplier>
+		<suffocationModifier>0.5</suffocationModifier>
+		<animBase>rock</animBase>
+		
+		<repairSounds animSoundFrame="5">
+			<repairSound>rockThud1</repairSound>
+			<repairSound>rockThud2</repairSound>
+			<repairSound>rockThud3</repairSound>
+		</repairSounds>
+		
+		<deathSounds>
+			<deathSound>crystalDeath</deathSound>
+		</deathSounds>
+		
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		
+		<powerEffect>
+			<cooldown>50</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>lockdown1</powerSound>
+				<powerSound>lockdown2</powerSound>
+			</powerSounds>
+			<lockdown>true</lockdown>
+			<buttonText>LOCKDOWN</buttonText>
+			<tooltip id="power_ready"></tooltip>
+			<cooldownColor r="133" g="231" b="237"/>
+			<effectAnim>explosion_crystal</effectAnim>
+		</powerEffect>
+	</race>
+	
+	<race name="anaerobic">
+		<moveSpeedMultiplier>0.85</moveSpeedMultiplier>
+		<oxygenChangeSpeed>-0.5</oxygenChangeSpeed>
+		<canSuffocate>false</canSuffocate>
+		
+		<repairSounds>
+			<repairSound>shrikeRepair</repairSound>
+		</repairSounds>
+		
+		<deathSounds>
+			<deathSound>shrikeDeath</deathSound>
+		</deathSounds>
+	</race>
+	
 	<race name="battle">
 		<controllable>true</controllable>
 		<canFight>true</canFight>
