@@ -30,6 +30,8 @@ Modify ship unlocks.
 
 Fix flagship cloak for new artilleries
 
+Fix alt lanius sprite
+
 /////////////////COMPLETE/////////////////
 
 Implement modified weapon sprites

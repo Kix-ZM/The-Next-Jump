@@ -148,8 +148,10 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		<ship>PLAYER_SHIP_SLUG</ship>
 		<ship>PLAYER_SHIP_REBEL</ship>
 		<ship>PLAYER_SHIP_LANIUS</ship>
-		<ship>PLAYER_SHIP_CLOAK</ship>
+		<empty/>
 		<ship>PLAYER_SHIP_CRYSTALLINE</ship>
+		<!--PAGE1-->
+		<ship>PLAYER_SHIP_CLOAK</ship>
     </shipOrder>
 	
 	<ship name="PLAYER_SHIP_KESTREL" b="true" c="true">
