@@ -63,6 +63,17 @@
 	<name>BOMB_1</name>
 </blueprintList>
 
+<blueprintList name="SHIPS_REBEL">
+	<name>REBEL_FAT</name>
+	<name>REBEL_SKINNY</name>
+</blueprintList>
+
+<!--elite-->
+<blueprintList name="SHIPS_REBEL_ELITE">
+	<name>REBEL_SKINNY_ELITE</name>
+	<name>REBEL_SKINNY_ELITE</name>
+</blueprintList>
+
 <!-- 
 **********************************************************************************************************************
                                                     AUTOS 
@@ -89,6 +100,17 @@
 	<name>ION_HEAVY</name>
 </blueprintList>
 
+<blueprintList name="SHIPS_AUTO">
+	<name>AUTO_BASIC</name>
+	<name>AUTO_ASSAULT</name>
+</blueprintList>
+<blueprintList name="SHPS_REBEL_AND_AUTO">
+	<name>AUTO_BASIC</name>
+	<name>AUTO_ASSAULT</name>
+	<name>REBEL_FAT</name>
+	<name>REBEL_SKINNY</name>
+</blueprintList>
+
 <!-- 
 **********************************************************************************************************************
                                                     FEDS 
@@ -108,6 +130,11 @@
 	<name>BEAM_1</name>
 	<name>BEAM_2</name>
 	<name>BOMB_1</name>
+</blueprintList>
+
+<blueprintList name="SHIPS_FED">
+	<name>FED_SCOUT</name>
+	<name>FED_BOMBER</name>
 </blueprintList>
 
 <!-- 
@@ -137,6 +164,12 @@
 	<name>BEAM_HULL</name>
 </blueprintList>
 
+<blueprintList name="SHIPS_ZOLTAN">
+	<name>ZOLTAN_FIGHTER</name>
+	<name>ZOLTAN_BOMBER</name>
+</blueprintList>
+
+
 <!-- 
 **********************************************************************************************************************
                                                     ENGI 
@@ -165,6 +198,11 @@
 	<name>BATTLE</name>
 </blueprintList>
 
+<blueprintList name="SHIPS_CIRCLE">
+	<name>CIRCLE_SCOUT</name>
+	<name>CIRCLE_BOMBER</name>
+</blueprintList>
+
 <!-- 
 **********************************************************************************************************************
                                                     ROCKS 
@@ -187,6 +225,12 @@
 	<name>ION_2</name>
 </blueprintList>
 
+<blueprintList name="SHIPS_ROCK">
+	<name>ROCK_SCOUT</name>
+	<name>ROCK_FIGHT</name>
+	<name>ROCK_ASSAULT</name>
+</blueprintList>
+
 <!-- 
 **********************************************************************************************************************
                                                     MANTIS 
@@ -206,6 +250,12 @@
 	<name>BOMB_1</name>
 	<name>BOMB_FIRE</name>
 	<name>BOMB_ION</name>
+</blueprintList>
+
+<blueprintList name="SHIPS_MANTIS">
+	<name>MANTIS_SCOUT</name>
+	<name>MANTIS_FIGHTER</name>
+	<name>MANTIS_BOMBER</name>
 </blueprintList>
 
 <!-- 
@@ -233,6 +283,12 @@
 	<name>ION_3</name>
 </blueprintList>
 
+<blueprintList name="SHIPS_JELLY">
+	<name>JELLY_BUTTON</name>
+	<name>JELLY_CROISSANT</name>
+	<name>JELLY_TRUFFLE</name>
+</blueprintList>
+
 <!-- 
 **********************************************************************************************************************
                                                     CRYSTALS 
@@ -244,6 +300,11 @@
 	<name>CRYSTAL_BURST_2</name>
 	<name>CRYSTAL_HEAVY_1</name>
 	<name>CRYSTAL_HEAVY_2</name>
+</blueprintList>
+
+<blueprintList name="SHIPS_CRYSTAL">
+	<name>CRYSTAL_SCOUT</name>
+	<name>CRYSTAL_BOMBER</name>
 </blueprintList>
 
 </FTL>

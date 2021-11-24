@@ -71,6 +71,9 @@
 	<name>DRONE_SHIELD</name>
 	<name>ANTI_DRONE</name>
 	<name>COMBAT_FIRE</name>
+	
+	<!--new-->
+	<name>MANNING</name>
 </blueprintList>
 
 <blueprintList name="DLC_AUGMENTS">
@@ -85,6 +88,9 @@
 	<name>LIFE_SCANNER</name>
 	<name>ZOLTAN_BYPASS</name>
 	<name>HACKING_STUN</name>
+	
+	<!--new-->
+	<name>SAFETY_BLANKETS</name>
 </blueprintList>
 
 <!-- 

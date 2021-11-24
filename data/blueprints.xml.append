@@ -3,6 +3,302 @@
 ********************************************************************************************************************************************************************************************************************************************
 ********************************************************************************************************************************************************************************************************************************************                                               
 
+												   CREW
+
+********************************************************************************************************************************************************************************************************************************************												 
+********************************************************************************************************************************************************************************************************************************************
+-->
+<crewBlueprint name="human">
+	<desc>Humans are common and uninteresting, but very skilled and adaptive.</desc>
+	<cost>45</cost>
+	<bp>2</bp>
+	<title>Human</title>
+	<short>Human</short>
+	<rarity>1</rarity>
+	<powerList>
+		<power>Has 33% resistance to fire and asphyxiation damage</power>
+		<power>Skills improve slightly faster</power>
+	</powerList>
+	<colorList>
+		<layer> <!--shirt-->
+			<color r="255" g="255" b="255" a="0" /> <!--default white-->
+			<color r="140" g="140" b="255" a="0.7" /> <!--default blue-->
+			<color r="140" g="215" b="255" a="0.7" /> <!--light blue-->
+			<color r="155" g="125" b="225" a="0.7" /> <!--purpleish-->
+			<color r="255" g="205" b="140" a="0.7" /> <!--orangeish-->
+		</layer>
+		<layer> <!--skin-->
+			<color r="255" g="235" b="90" a="0.2" /> <!--asian-->
+			<color r="255" g="150" b="150" a="0.4" /> <!--white-->
+			<color r="255" g="124" b="89" a="0.4" /> <!--native-->
+			<color r="90" g="60" b="40" a="0.7" /> <!--black-->
+		</layer>
+		<layer> <!--hair-->
+			<color r="255" g="210" b="95" a="0.2" /> <!--blonde-->
+			<color r="194" g="145" b="66" a="0.3" /> <!--dirty blonde-->
+			<color r="95" g="67" b="43" a="0.2" /> <!--brunette-->
+			<color r="0" g="0" b="0" a="0.8" /> <!--black-->
+			<color r="255" g="108" b="0" a="0.9" /> <!--ginger-->
+			
+			<color r="248" g="68" b="68" a="0.6" /> <!--dyed red-->
+			<color r="68" g="83" b="248" a="0.6" /> <!--dyed blue-->
+			<color r="255" g="126" b="222" a="0.5" /> <!--dyed pink-->
+			<color r="126" g="255" b="167" a="0.4" /> <!--dyed green-->
+		</layer>
+		<layer> <!--eye-->
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="1" />
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="engi">
+	<desc>The Engi, complex and organized hives of individual nanites, make excellent engineers but their pacifist ways limit their fighting prowess.</desc>
+	<cost>50</cost>
+	<bp>2</bp>
+	<title>Engi</title>
+	<short>Engi</short>
+	<rarity>2</rarity>
+	<powerList>
+		<power>Repair speed is doubled</power>
+		<power>Combat damage inflicted is halved</power>
+	</powerList>
+	<colorList>
+		<layer> <!--body-->
+			<color r="255" g="255" b="255" a="0" /> <!--default grey-->
+			<color r="180" g="195" b="212" a="0.2" /> <!--light grey-->
+			<color r="186" g="106" b="135" a="0.7" /> <!--red/pink-->
+			<color r="183" g="189" b="159" a="0.7" /> <!--yellow-->
+		</layer>
+		<layer> <!--eye-->
+			<color r="255" g="255" b="255" a="1" /> <!--default green-->
+			<color r="0" g="70" b="100" a="1" /> <!--blue-->
+			<color r="72" g="100" b="0" a="1" /> <!--yellow-->
+			<color r="100" g="51" b="87" a="1" /> <!--pink-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="energy">
+	<desc>Ancient but 'wise' beings who long since left behind their corporeal form. The energy the Zoltan exude is useful for powering systems.</desc>
+	<title>Zoltan</title>
+	<short>Zoltan</short>
+	<cost>60</cost>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<powerList>
+		<power>Provides power to occupied system</power>
+		<power>Max health reduced to 70</power>
+		<power>15 damage to enemy crew on death</power>
+	</powerList>
+	<colorList>
+		<layer> <!--energy-->
+            <color r="255" g="255" b="255" a="1" /> <!--default green)-->
+            <color r="46" g="192" b="0" a="0.7" /> <!--dark green-->
+            <color r="79" g="228" b="117" a="0.7" /> <!--green-->
+            <color r="58" g="163" b="241" a="0.7" /> <!--blue-->
+            <color r="58" g="241" b="235" a="0.6" /> <!--light blue-->
+            <color r="58" g="86" b="241" a="0.6" /> <!--dark blue-->
+            <color r="95" g="241" b="58" a="0.8" /> <!--lime-->
+            <color r="209" g="241" b="58" a="0.7" /> <!--yellow green-->
+            <color r="180" g="58" b="241" a="0.6" /> <!--purple-->
+            <color r="242" g="81" b="228" a="0.6" /> <!--pink-->
+            <color r="206" g="253" b="233" a="0.9" /> <!--whiteish-->
+        </layer>
+		<layer> <!--robe-->
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="1" />
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="rock">
+	<desc>The aptly named Rockmen of Vrachos IV are rarely seen and are known for their fortitude.</desc>
+	<title>Rockman</title>
+	<short>Rockman</short>
+	<cost>55</cost>
+	<bp>4</bp>
+	<rarity>3</rarity>
+	<powerList>
+		<power>Immune to fire</power>
+		<power>Movement speed is halved</power>
+		<power>Max Health is increased to 165</power>
+	</powerList>
+	<colorList>
+		<layer>
+			<!-- skin --> 
+			<color r="106" g="51" b="37" a="0.5"/> <!--brown-->
+			<color r="116" g="152" b="182" a="0.2"/> <!--light grey-->
+			<color r="116" g="152" b="182" a="0.5"/> <!--grey-->
+			<color r="76" g="42" b="31" a="0.7" />
+			<color r="120" g="80" b="35" a="0.2" />
+			<color r="140" g="100" b="220" a="0.7" />
+			<color r="240" g="111" b="64" a="0.7" />
+			
+			<color r="104" g="116" b="39" a="0.5" /> <!--green-->
+            <color r="110" g="42" b="162" a="0.6" /> <!--purple-->
+            <color r="208" g="92" b="15" a="0.6" /> <!--orangey red-->
+		</layer>
+		<layer>
+			<!-- paint --> 
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			
+			<color r="255" g="255" b="255" a="1"/> <!--default purple-->
+			<color r="58" g="165" b="217" a="1"/> <!--blue-->
+			<color r="37" g="167" b="74" a="1"/> <!--green/moss-->
+		</layer>
+		<layer> <!--cracks-->
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="0" />
+			<color r="255" g="255" b="255" a="1" />
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="mantis">
+	<desc>The Mantis disregard for individual lives led to their evolution as a vicious warrior race.</desc>
+	<title>Mantis</title>
+	<short>Mantis</short>
+	<cost>55</cost>
+	<bp>2</bp>
+	<rarity>2</rarity>
+	<powerList>
+		<power>Inflict 1.5x damage in combat</power>
+		<power>1.2x move speed</power>
+		<power>Halved repair speed</power>
+	</powerList>
+	<colorList>
+		<layer>
+			<!--skin-->
+			<color r="17" g="103" b="100" a="0.7"/>
+			<color r="223" g="95" b="2" a="0.5"/>
+			<color r="119" g="200" b="45" a="0.6"/>
+			<color r="119" g="165" b="45" a="0" />
+			<color r="156" g="156" b="35" a="0.5" />
+			<color r="80" g="98" b="33" a="0.7"/>
+			<color r="51" g="241" b="0" a="0.9" />
+			<color r="111" g="241" b="207" a="0.9" />
+			<color r="255" g="0" b="0" a="0.2" />
+			
+			<color r="207" g="52" b="52" a="0.7" /> <!--red-->
+			<color r="52" g="207" b="180" a="0.7" /> <!--cyan-->
+			<color r="52" g="140" b="207" a="0.7" /> <!--blue-->
+			<color r="249" g="75" b="227" a="0.5" /> <!--pink-->
+			<color r="231" g="231" b="231" a="0.8" /> <!--white-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="slug">
+	<desc>These telepathic Slugs were shunned in the Galactic Federation for their constant thievery and attempts at manipulation.</desc>
+	<title>Slug</title>
+	<short>Slug</short>
+	<cost>45</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Telepathic powers grant extended vision, lifeform detection, and resistance to mind control.</power>
+		<power>Provides immunity to mind control and partial stun resistance to nearby allied crew.</power>
+		<power>Takes 75% more damage from asphyxiation.</power>
+	</powerList>
+	<colorList>
+		<layer> <!--skin-->
+			<color r="227" g="172" b="39" a="0.1"/> <!--light yellow-->
+			<color r="227" g="172" b="39" a="0.7"/> <!--yellow-->
+			<color r="255" g="230" b="175" a="0.8" /> <!--orange-->
+			<color r="120" g="240" b="60" a="0.6" />
+			<color r="255" g="241" b="0" a="1" />
+			<color r="255" g="170" b="0" a="1" />
+			<color r="0" g="0" b="0" a="0" />
+			<color r="140" g="140" b="200" a="0.5" />
+		</layer>
+		<layer> <!--shirt-->
+			<color r="255" g="255" b="255" a="0" /> <!--default white-->
+			<color r="140" g="140" b="255" a="0.7" /> <!--default blue-->
+			<color r="140" g="215" b="255" a="0.7" /> <!--light blue-->
+			<color r="155" g="125" b="225" a="0.7" /> <!--purpleish-->
+			<color r="255" g="205" b="140" a="0.7" /> <!--orangeish-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="crystal">
+	<desc>Ancient ancestors of the Rockmen.</desc>
+	<title>Crystal</title>
+	<short>Crystal</short>
+	<cost>60</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Lockdown power (activate in crew box)</power>
+		<power>Reduced suffocation damage</power>
+		<power>Movement speed reduced by 20 percent</power>
+		<power>Max Health is increased to 125</power>
+	</powerList>
+	<colorList>
+		<layer>
+			<color r="40" g="187" b="255" a="0.5" />
+			<color r="55" g="40" b="255" a="0.4" />
+			<color r="55" g="40" b="255" a="0.2" />
+			<color r="115" g="131" b="138" a="0.1" />
+			<color r="255" g="0" b="0" a="0.5" />
+			
+			<color r="234" g="0" b="255" a="0.3" /> <!--pink-->
+            <color r="144" g="0" b="255" a="0.3" /> <!--purple-->
+            <color r="0" g="255" b="255" a="0.5" /> <!--cyan-->
+			<color r="255" g="0" b="0" a="0.5" /> <!--red-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+
+<crewBlueprint name="rebel">
+	<desc>Dangerous, aggressive, but no less common and uninteresting try though they like.</desc>
+	<cost>45</cost>
+	<bp>2</bp>
+	<title>Rebel</title>
+	<short>Rebel</short>
+	<rarity>1</rarity>
+	<powerList>
+		<power>Has 33% resistance to fire and asphyxiation damage</power>
+		<power>Skills improve slightly faster</power>
+	</powerList>
+	<colorList>
+		<layer> <!--skin-->
+			<color r="255" g="235" b="90" a="0.2" /> <!--asian-->
+			<color r="255" g="150" b="150" a="0.4" /> <!--white-->
+			<color r="255" g="124" b="89" a="0.4" /> <!--native-->
+			<color r="90" g="60" b="40" a="0.7" /> <!--black-->
+		</layer>
+		<layer> <!--hair-->
+			<color r="255" g="210" b="95" a="0.2" /> <!--blonde-->
+			<color r="194" g="145" b="66" a="0.3" /> <!--dirty blonde-->
+			<color r="95" g="67" b="43" a="0.2" /> <!--brunette-->
+			<color r="0" g="0" b="0" a="0.8" /> <!--black-->
+			<color r="255" g="108" b="0" a="0.9" /> <!--ginger-->
+			
+			<color r="248" g="68" b="68" a="0.6" /> <!--dyed red-->
+			<color r="68" g="83" b="248" a="0.6" /> <!--dyed blue-->
+			<color r="255" g="126" b="222" a="0.5" /> <!--dyed pink-->
+			<color r="126" g="255" b="167" a="0.3" /> <!--dyed green-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<!-- 
+********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************************                                               
+
 												   WEAPONS
 
 ********************************************************************************************************************************************************************************************************************************************												 
@@ -3245,9 +3541,9 @@
 	<crewCount amount="2" class="crystal" />
 	<aug name="CRYSTAL_SHARDS" />
 </shipBlueprint>
-<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_2" layout="crystal_cruiser_3" img="crystal_cruiser_3">
+<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_2" layout="crystal_cruiser_2" img="crystal_cruiser_2">
 	<class>Crystal Cruiser</class>
-	<name>Amber</name>
+	<name>Carnelian</name>
 	<unlock id="ship_PLAYER_SHIP_CRYSTAL_2_unlock"/>
 	<desc>Though the crystals might not possess the same immunities to fire as their rock desendants, their lockdown abilities provide a unique advatange paired with flames.</desc>
 	<systemList>

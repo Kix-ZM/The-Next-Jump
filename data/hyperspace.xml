@@ -14,6 +14,7 @@
 <crystalShardFix enabled="true"/>
 <forceDlc enabled="false"/>
 <hackingDroneFix enabled="true"/>
+<resistsMindControlStat enabled="true"/>
 <defaults>
 	<beaconType_hideVanillaLabel>true</beaconType_hideVanillaLabel>
 	<checkCargo>false</checkCargo>
@@ -370,6 +371,8 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 
 <crew>
 	<race name="human">
+		<fireDamageMultiplier>0.67</fireDamageMultiplier>
+		<suffocationModifier>0.67</suffocationModifier>
 		<skills>
 			<piloting req="13"/>
 			<engines req="13"/>
@@ -382,6 +385,7 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 	
 	<race name="engi">
 		<repairSpeed>2.0</repairSpeed>
+		<fireRepairMultiplier>0.5</fireRepairMultiplier> <!--extinguishes at normal speed-->
 		<damageMultiplier>0.5</damageMultiplier>
 		
 		<deathSounds>
@@ -391,10 +395,10 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 	
 	<race name="mantis">
 		<repairSpeed>0.5</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier> <!--extinguishes at normal speed-->
 		<damageMultiplier>1.5</damageMultiplier>
 		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
 		<animBase>mantis</animBase>
-		
 		<deathSounds>
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
@@ -407,9 +411,8 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 	</race>
 	
 	<race name="rock">
-		<maxHealth>150</maxHealth>
+		<maxHealth>165</maxHealth>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
-		<fireRepairMultiplier>2.0</fireRepairMultiplier>
 		<canBurn>false</canBurn>
 		<animBase>rock</animBase>
 		
@@ -451,6 +454,27 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		<isTelepathic>true</isTelepathic>
 		<resistsMindControl>true</resistsMindControl>
 		<detectsLifeforms>true</detectsLifeforms>
+		<stunMultiplier>0.5</stunMultiplier>
+		<passiveStatBoosts>  
+			<statBoost name="stunMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<maxStacks id="slugStunImmunity">1</maxStacks>
+			</statBoost>
+			<statBoost name="resistsMindControl">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>0</priority>
+				<maxStacks id="slugMindImmunity">1</maxStacks>
+			</statBoost>
+		</passiveStatBoosts>
 	</race>
 	
 	<race name="crystal">

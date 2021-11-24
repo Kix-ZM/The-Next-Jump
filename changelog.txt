@@ -38,6 +38,20 @@ Exchanged one of the repair drones on Engi B for a boarding drone. Increased med
 
 All three Stealth Cruisers now have titanium casing.
 
+/////////////////CREW/////////////////
+
+Humans now have 33% hazard resistance.
+
+Rockmen have 15 more health. They no longer have a hidden extinguishing boost.
+
+Slugs now suffocate faster, but have partial stun resistance and provide the same stun resistance/mind control immunity to allied crew in the same room.
+
+Extinguishing boost is no longer tied to repair speed.
+
+Modified crew descriptions.
+
+Added new crew customization options. Resprited Zoltans.
+
 /////////////////WEAPONS/////////////////
 
 All missiles now have distinct and unique sprites.

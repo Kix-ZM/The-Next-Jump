@@ -879,9 +879,9 @@
 	<floorImage>stealth</floorImage>
 </shipBlueprint> 
 
-<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_3" layout="crystal_cruiser_2" img="crystal_cruiser_2">
+<shipBlueprint name="PLAYER_SHIP_CRYSTALLINE_3" layout="crystal_cruiser_3" img="crystal_cruiser_3">
 	<class>Crystal Cruiser</class>
-	<name>Carnelian</name>
+	<name>Amber</name>
 	<unlock id="ship_PLAYER_SHIP_CRYSTAL_3_unlock"/>
 	<desc>Their unique racial ability makes the Crystal beings very adept at ship boarding. This ship was designed for such raiding parties.</desc>
 	<systemList>
