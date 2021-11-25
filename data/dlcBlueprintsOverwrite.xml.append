@@ -384,6 +384,9 @@
 	<crewCount amount="1" class="anaerobic" />
 	<crewCount amount="1" class="rock" />
 	<aug name="AUTO_COOLDOWN" />
+	<shieldImage>kestral</shieldImage>
+	<cloakImage>kestral</cloakImage>
+	<floorImage>kestral</floorImage>
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_ENGI_3" layout="circle_cruiser_3" img="circle_cruiser_3">

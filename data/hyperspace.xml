@@ -26,8 +26,8 @@
 <console enabled="true"/> 
 
 <saveFile>
-    <prefix>vnd</prefix>
-    <inheritMode>1</inheritMode>
+    <prefix>nj</prefix>
+    <inheritMode>2</inheritMode>
 </saveFile>
 
 <hullNumbers enabled="true">
@@ -148,7 +148,7 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
 		<ship>PLAYER_SHIP_SLUG</ship>
 		<ship>PLAYER_SHIP_REBEL</ship>
 		<ship>PLAYER_SHIP_LANIUS</ship>
-		<empty/>
+		<ship>PLAYER_SHIP_LEECH</ship>
 		<ship>PLAYER_SHIP_CRYSTALLINE</ship>
 		<!--PAGE1-->
 		<ship>PLAYER_SHIP_CLOAK</ship>
@@ -238,18 +238,42 @@ This enemy is automated, meaning it cannot be crew-killed. Systems act as though
             <value>8</value>
         </unlock>
     </ship>
+	<ship name="PLAYER_SHIP_LEECH" b="true" c="true">
+        <unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ROCK</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ROCK_2</shipReq>
+        </unlock>
+		<unlock variant="a" silent="false">
+            <type>2</type>
+            <shipReq>PLAYER_SHIP_ROCK_3</shipReq>
+        </unlock>
+		<unlock variant="b" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_LEECH</shipReq>
+            <value>8</value>
+        </unlock>
+		<unlock variant="c" silent="false">
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_LEECH_2</shipReq>
+            <value>8</value>
+        </unlock>
+    </ship>
 	<ship name="PLAYER_SHIP_ZOLTAN" b="true" c="true">
         <unlock variant="a" silent="false">
             <type>2</type>
-            <shipReq>PLAYER_SHIP_ROCKMAN</shipReq>
+            <shipReq>PLAYER_SHIP_LEECH</shipReq>
         </unlock>
 		<unlock variant="a" silent="false">
             <type>2</type>
-            <shipReq>PLAYER_SHIP_ROCKMAN_2</shipReq>
+            <shipReq>PLAYER_SHIP_LEECH_2</shipReq>
         </unlock>
 		<unlock variant="a" silent="false">
             <type>2</type>
-            <shipReq>PLAYER_SHIP_ROCKMAN_3</shipReq>
+            <shipReq>PLAYER_SHIP_LEECH_3</shipReq>
         </unlock>
 		<unlock variant="b" silent="false">
             <type>1</type>

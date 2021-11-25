@@ -19,9 +19,13 @@ UNLOCK TEXTS
 <text name="ship_PLAYER_SHIP_ROCK_2_unlock">Get to Sector 8 with the Rock Cruiser Type A to unlock this ship.</text>
 <text name="ship_PLAYER_SHIP_ROCK_3_unlock">Get to Sector 5 with the Rock Cruiser Type B to unlock this ship.</text>
 
-<text name="ship_PLAYER_SHIP_ZOLTAN_unlock">??? or win with any Rock Cruiser to unlock this ship.</text>
-<text name="ship_PLAYER_SHIP_ZOLTAN_2_unlock">Get to Sector 8 with the Zoltan Cruiser Type A to unlock this ship.</text>
-<text name="ship_PLAYER_SHIP_ZOLTAN_3_unlock">Get to Sector 5 with the Zoltan Cruiser Type B to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_LEECH_unlock">??? or win with any Rock Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_LEECH_2_unlock">Get to Sector 8 with the Rock Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_LEECH_3_unlock">Get to Sector 5 with the Rock Cruiser Type B to unlock this ship.</text>
+
+<text name="ship_PLAYER_SHIP_ZOLTAN_unlock">??? or win with any Leech Cruiser to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ZOLTAN_2_unlock">Get to Sector 8 with the Leech Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_ZOLTAN_3_unlock">Get to Sector 5 with the Leech Cruiser Type B to unlock this ship.</text>
 
 <text name="ship_PLAYER_SHIP_SLUG_unlock">??? or win with any Zoltan Cruiser to unlock this ship.</text>
 <text name="ship_PLAYER_SHIP_SLUG_2_unlock">Get to Sector 8 with the Rock Cruiser Type A to unlock this ship.</text>
